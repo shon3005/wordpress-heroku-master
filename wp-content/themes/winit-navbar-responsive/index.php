@@ -14,7 +14,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>material.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>index.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="stylesheet" type="text/css" href="font.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
