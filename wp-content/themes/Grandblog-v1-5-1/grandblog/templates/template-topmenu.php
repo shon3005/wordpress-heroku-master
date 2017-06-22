@@ -123,30 +123,6 @@ elseif(is_home())
 			if(!empty($tg_main_menu))
 			{
 		?>
-	        <div id="nav_wrapper">
-	        	<div class="nav_wrapper_inner">
-	        		<div id="menu_border_wrapper">
-	        			<?php
-	        				//Check if has custom menu
-	        				if ( has_nav_menu( 'primary-menu' ) )
-	    					{
-	    		    		    wp_nav_menu(
-	    		    		        	array(
-	    		    		        		'menu_id'			=> 'main_menu',
-	    		    		        		'menu_class'		=> 'nav',
-	    		    		        		'theme_location' 	=> 'primary-menu',
-	    		    		        		'walker' => new Grand_Blog_walker(),
-	    		    		        	)
-	    		    		    );
-	    		    		}
-	    		    		else
-	    		    		{
-	    			    	    echo '<div class="notice">'.esc_html__('Setup Menu via Wordpress Dashboard > Appearance > Menus', 'grandblog-translation' ).'</div>';
-	    		    		}
-	        			?>
-	        		</div>
-	        	</div>
-	        </div>
 	        <!-- End main nav -->
         <?php
         	}
