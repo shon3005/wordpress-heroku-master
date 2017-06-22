@@ -1,0 +1,28 @@
+[09-May-2017 11:47:03 UTC] PHP Warning:  include(/home1/appwinit/public_html/blog/wp-content/plugins/mailchimp-for-wp/includes/forms/class-widget.php): failed to open stream: No such file or directory in /home1/appwinit/public_html/blog/wp-content/plugins/mailchimp-for-wp/vendor/composer/ClassLoader52.php on line 186
+[09-May-2017 11:47:03 UTC] PHP Warning:  include(/home1/appwinit/public_html/blog/wp-content/plugins/mailchimp-for-wp/includes/forms/class-widget.php): failed to open stream: No such file or directory in /home1/appwinit/public_html/blog/wp-content/plugins/mailchimp-for-wp/vendor/composer/ClassLoader52.php on line 186
+[09-May-2017 11:47:03 UTC] PHP Warning:  include(): Failed opening '/home1/appwinit/public_html/blog/wp-content/plugins/mailchimp-for-wp/includes/forms/class-widget.php' for inclusion (include_path='.:/opt/php70/lib/php') in /home1/appwinit/public_html/blog/wp-content/plugins/mailchimp-for-wp/vendor/composer/ClassLoader52.php on line 186
+[09-May-2017 11:47:03 UTC] PHP Fatal error:  Uncaught Error: Class 'MC4WP_Form_Widget' not found in /home1/appwinit/public_html/blog/wp-includes/class-wp-widget-factory.php:106
+Stack trace:
+#0 /home1/appwinit/public_html/blog/wp-includes/widgets.php(113): WP_Widget_Factory->register('MC4WP_Form_Widg...')
+#1 /home1/appwinit/public_html/blog/wp-content/plugins/mailchimp-for-wp/includes/forms/class-form-manager.php(109): register_widget('MC4WP_Form_Widg...')
+#2 /home1/appwinit/public_html/blog/wp-includes/class-wp-hook.php(298): MC4WP_Form_Manager->register_widget('')
+#3 /home1/appwinit/public_html/blog/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters(NULL, Array)
+#4 /home1/appwinit/public_html/blog/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#5 /home1/appwinit/public_html/blog/wp-includes/widgets.php(1474): do_action('widgets_init')
+#6 /home1/appwinit/public_html/blog/wp-includes/class-wp-hook.php(298): wp_widgets_init('')
+#7 /home1/appwinit/public_html/blog/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters(NULL, Array)
+#8 /h in /home1/appwinit/public_html/blog/wp-includes/class-wp-widget-factory.php on line 106
+[09-May-2017 11:47:03 UTC] PHP Warning:  include(/home1/appwinit/public_html/blog/wp-content/plugins/mailchimp-for-wp/includes/forms/class-widget.php): failed to open stream: No such file or directory in /home1/appwinit/public_html/blog/wp-content/plugins/mailchimp-for-wp/vendor/composer/ClassLoader52.php on line 186
+[09-May-2017 11:47:03 UTC] PHP Warning:  include(/home1/appwinit/public_html/blog/wp-content/plugins/mailchimp-for-wp/includes/forms/class-widget.php): failed to open stream: No such file or directory in /home1/appwinit/public_html/blog/wp-content/plugins/mailchimp-for-wp/vendor/composer/ClassLoader52.php on line 186
+[09-May-2017 11:47:03 UTC] PHP Warning:  include(): Failed opening '/home1/appwinit/public_html/blog/wp-content/plugins/mailchimp-for-wp/includes/forms/class-widget.php' for inclusion (include_path='.:/opt/php70/lib/php') in /home1/appwinit/public_html/blog/wp-content/plugins/mailchimp-for-wp/vendor/composer/ClassLoader52.php on line 186
+[09-May-2017 11:47:03 UTC] PHP Fatal error:  Uncaught Error: Class 'MC4WP_Form_Widget' not found in /home1/appwinit/public_html/blog/wp-includes/class-wp-widget-factory.php:106
+Stack trace:
+#0 /home1/appwinit/public_html/blog/wp-includes/widgets.php(113): WP_Widget_Factory->register('MC4WP_Form_Widg...')
+#1 /home1/appwinit/public_html/blog/wp-content/plugins/mailchimp-for-wp/includes/forms/class-form-manager.php(109): register_widget('MC4WP_Form_Widg...')
+#2 /home1/appwinit/public_html/blog/wp-includes/class-wp-hook.php(298): MC4WP_Form_Manager->register_widget('')
+#3 /home1/appwinit/public_html/blog/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters(NULL, Array)
+#4 /home1/appwinit/public_html/blog/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#5 /home1/appwinit/public_html/blog/wp-includes/widgets.php(1474): do_action('widgets_init')
+#6 /home1/appwinit/public_html/blog/wp-includes/class-wp-hook.php(298): wp_widgets_init('')
+#7 /home1/appwinit/public_html/blog/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters(NULL, Array)
+#8 /h in /home1/appwinit/public_html/blog/wp-includes/class-wp-widget-factory.php on line 106
