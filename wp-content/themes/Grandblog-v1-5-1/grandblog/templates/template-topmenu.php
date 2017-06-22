@@ -154,30 +154,6 @@ elseif(is_home())
         <?php
         	}
         ?>
-
-        <!-- Begin right corner buttons -->
-    	<div id="logo_right_button">
-    		<?php
-				if(is_single())
-				{
-			?>
-			<div class="post_share_wrapper">
-				<a id="page_share" href="javascript:;"><i class="fa fa-share-alt"></i></a>
-			</div>
-			<?php
-				}
-			?>
-
-			<!-- Begin search icon -->
-			<a href="javascript:;" id="search_icon"><i class="fa fa-search"></i></a>
-			<!-- End side menu -->
-
-	    	<!-- Begin search icon -->
-			<a href="javascript:;" id="mobile_nav_icon"></a>
-			<!-- End side menu -->
-
-    	</div>
-    	<!-- End right corner buttons -->
         </div>
     	</div>
     </div>
