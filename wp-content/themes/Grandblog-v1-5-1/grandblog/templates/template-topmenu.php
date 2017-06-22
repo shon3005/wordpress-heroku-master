@@ -99,10 +99,18 @@ elseif(is_home())
 <div class="top_bar">
 
 		<div id="menu_wrapper">
-		<?php
-    		//Get Soical Icon
-			get_template_part("/templates/template-socials");
-    	?>
+			<div class="custom-nav">
+				<a href="http://www.appwinit.com" class="top-logo"><img src="http://www.appwinit.com/public/images/logo/image.png"/></a>
+
+				<div class="right-nav">
+					<a href="http://www.appwinit.com">Home</a>
+					<a href="http://www.appwinit.com/how-it-works">How it Works</a>
+					<a href="http://www.appwinit.com/business">Business</a>
+					<a href="http://www.appwinit.com/faq">FAQ</a>
+					<a href="http://www.appwinit.com/contact">Contact</a>
+					<a href="http://blog.appwinit.com">Blog</a>
+				</div>
+			</div>
 
 		<?php
 			//Check if enable main menu
@@ -115,42 +123,30 @@ elseif(is_home())
 			if(!empty($tg_main_menu))
 			{
 		?>
-            <nav class="navbar navbar-fixed-top" style="background-color: white;">
-                <div class="container max-width-900 wi-navbar" style="height: 73px;">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" #toggler>
-                            <span>
-                                <img src="http://cdn.appwinit.com/small-menu/image.png" alt="menu" srcset="http://cdn.appwinit.com/small-menu/image@2x.png 2x, http://cdn.appwinit.com/small-menu/image@3x.png 3x" style="height: 19px; width: 25px;margin-top: 3px;"/>
-                            </span>
-                        </button>
-                        <a class="navbar-brand" href="http://www.appwinit.com/"><img src="http://cdn.appwinit.com/logo/image.png" alt="Logo" srcset="http://cdn.appwinit.com/logo/image@2x.png 2x, http://cdn.appwinit.com/logo/image@3x.png 3x" style="height: 22px; width: 77px;"/></a>
-                    </div>
-
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav navbar-right desktop">
-                            <li><a href="http://www.appwinit.com/">Home</a></li>
-                            <li><a href="http://www.appwinit.com/how-it-works">How it works</a></li>
-                            <li><a href="http://www.appwinit.com/business">Business</a></li>
-                            <li><a href="http://www.appwinit.com/faq/parking-tickets">FAQ</a></li>
-                            <li><a href="http://www.appwinit.com/contact">Contact</a></li>
-                            <li><a href="http://blog.appwinit.com">Blog</a></li>
-                            <!-- <li *ngIf="!userService.authenticated"><a routerLink="/log-in" routerLinkActive="active">Log in</a></li> -->
-                            <!-- <li *ngIf="!userService.authenticated"><a class="bordered  sign-up-button" routerLink="/sign-up" routerLinkActive="active">Sign Up</a></li> -->
-                        </ul>
-
-                        <!-- <ul class="nav navbar-nav navbar-right mobile"> -->
-                            <!-- <li><a href="http://www.appwinit.com/">Home</a></li> -->
-                            <!-- <li><a href="http://www.appwinit.com/how-it-works">How it works</a></li> -->
-                            <!-- <li><a href="http://www.appwinit.com/business">Business</a></li> -->
-                            <!-- <li><a href="http://www.appwinit.com/faq/parking-tickets">FAQ</a></li> -->
-                            <!-- <li><a href="http://www.appwinit.com/contact">Contact</a></li> -->
-                            <!-- <li><a href="http://blog.appwinit.com">Blog</a></li> -->
-                            <!-- <li *ngIf="!userService.authenticated"><a routerLink="/log-in" routerLinkActive="active">Log in</a></li> -->
-                            <!-- <li *ngIf="!userService.authenticated"><a class="bordered  sign-up-button" routerLink="/sign-up" routerLinkActive="active">Sign Up</a></li> -->
-                        <!-- </ul> -->
-                    </div>
-                </div>
-            </nav>
+	        <div id="nav_wrapper">
+	        	<div class="nav_wrapper_inner">
+	        		<div id="menu_border_wrapper">
+	        			<?php
+	        				//Check if has custom menu
+	        				if ( has_nav_menu( 'primary-menu' ) )
+	    					{
+	    		    		    wp_nav_menu(
+	    		    		        	array(
+	    		    		        		'menu_id'			=> 'main_menu',
+	    		    		        		'menu_class'		=> 'nav',
+	    		    		        		'theme_location' 	=> 'primary-menu',
+	    		    		        		'walker' => new Grand_Blog_walker(),
+	    		    		        	)
+	    		    		    );
+	    		    		}
+	    		    		else
+	    		    		{
+	    			    	    echo '<div class="notice">'.esc_html__('Setup Menu via Wordpress Dashboard > Appearance > Menus', 'grandblog-translation' ).'</div>';
+	    		    		}
+	        			?>
+	        		</div>
+	        	</div>
+	        </div>
 	        <!-- End main nav -->
         <?php
         	}
@@ -168,14 +164,6 @@ elseif(is_home())
 			<?php
 				}
 			?>
-
-			<!-- Begin search icon -->
-			<a href="javascript:;" id="search_icon"><i class="fa fa-search"></i></a>
-			<!-- End side menu -->
-
-	    	<!-- Begin search icon -->
-			<a href="javascript:;" id="mobile_nav_icon"></a>
-			<!-- End side menu -->
 
     	</div>
     	<!-- End right corner buttons -->
