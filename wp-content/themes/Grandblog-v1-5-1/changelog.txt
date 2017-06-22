@@ -1,0 +1,81 @@
+----------------------------------------------------------------------------
+   Release notes for Theme
+----------------------------------------------------------------------------
+
+   Theme Name: GrandBlog
+
+   Version: 1.5.1
+
+   by ThemeGoods
+   http://themeforest.net/user/ThemeGoods
+
+
+----------------------------------------------------------------------------
+  Change log
+----------------------------------------------------------------------------
+
+= V1.0 * 08.11.2015 =
+* Initial Release
+
+= V1.1 * 18.11.2015 =
+* Fix Instagram issue for some account
+
+= V1.1.1 * 20.11.2015 =
+* Fix contact form issue when using child theme
+* Fix category post widget issue
+* Fix Google font error for some customer server setting
+
+= V1.1.2 * 10.12.2015 =
+* Fix comment string translation issue
+
+= V1.1.3 * 23.12.2015 =
+* Fix duplicated posts issue in infinite scroll feature
+
+= V1.1.4 * 30.12.2015 =
+* Fix commentžs date translation issue
+
+= V1.1.5 * 05.01.2016 =
+* Fix post reading indicator display issue when boxed layout enabled
+
+= V1.1.6 * 08.01.2016 =
+* Fix google+ social profile issue when using shortcode and widget
+
+= V1.1.7 * 13.01.2016 =
+* Fix pagination issue when set page as static homepage in WordPress 4.4.1
+
+= V1.1.8 * 04.03.2016 =
+* Fix relative captcha script path issue for some customer
+* Fix PHP error for site using old version of PHP
+* Fix image blur on iPad, iPhone when using WordPress 4.4.1
+
+= V1.2 * 07.04.2016 =
+* Update theme customizer script for better loading speed & performance
+* Fix post slider title width 100% issue
+* Fix post indicator issue when not using sticky menu
+
+= V1.3 * 08.05.2016 =
+* Add an option to change sidebar background color
+* Fix Instagram widget and photo stream issue for some account
+* Fix input button line height display issue
+
+= V1.3.1 * 26.05.2016 =
+* Add auto play post slider option
+
+* Fix comment layout issue on iPad
+* Fix video lightbox issue
+* Fix Page Title Background Image Height (in %) should be in px
+
+= V1.3.2 * 02.06.2016 =
+* Add retina ready support for Instagram photostream
+* Fix Instagram API error from new Instagram API
+
+= V1.3.3 * 27.09.2016 =
+* Fix theme setting layout issue on WordPress 4.6+
+
+= V1.4 * 07.11.2016 =
+* Fix LinkedIn social profile issue on footer
+* Fix clicking on search icon and close, scroll bar disappear
+* Fix 2, 3 columns grid layout issue for some customers
+
+= V1.5.1 * 04.04.2017 =
+* Update import demo URLs

@@ -1,0 +1,955 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>GrandBlog Wordpress Version Documentation Template</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;GrandBlog Wordpress Template&rdquo; Documentation by &ldquo;ThemeGoods&rdquo;</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;GrandBlog Theme Documentation&rdquo;</h1>
+		
+		<div style="text-align:center">
+				<p>
+					<a href="https://twitter.com/ipeerapong" class="twitter-follow-button" data-show-count="false" data-size="large">Follow me on Twitter</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				</p>
+	
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#gettingStarted">What's Included</a></li>
+			<li><a href="#installation">Installation</a>
+				<ol>
+					<li>
+						<a href="#settingupheader">Setting up header</a>	
+					</li>
+					<li>
+						<a href="#settingupfooter">Setting up Footer</a>
+					</li>
+					<li>
+						<a href="#settingupsidebar">Setting up Sidebar</a>
+					</li>
+					<li>
+						<a href="#settinguppage">Setting up Pages & Contact Page</a>
+					</li>
+					<li>
+						<a href="#homepagecontents">Setting up Homepage</a>
+					</li>
+					<li>
+						<a href="#settingupblog">Setting up Blog Post</a>	
+					</li>
+					<li><a href="#settingcategory">Setting up Category</a></li>
+					<li><a href="#settingupimagegallery">Setting up Image Gallery</a></li>
+					<li><a href="#settingupwidgets">Widgets</a></li>
+					<li><a href="#customize">Theme Customize</a></li>
+					<li><a href="#themetranslation">Theme Translation</a></li>
+					<li><a href="#wpml">WPML Plugin For Multilingual Content</a></li>
+					<li><a href="#themeupdate">How to update the theme</a></li>
+					<li><a href="#updatefromprevious">Updating from existing theme</a></li>
+					<li><a href="#speedupsite">How to speed up your site using plugins</a></li>
+				</ol>
+			</li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="gettingStarted"><strong>A) What's Included</strong> - <a href="#toc">top</a></h3>
+		<p>
+			When you purchase our theme from Themeforest. You can download GrandBlog files from <strong>Themeforest &gt; Your Account &gt; Downloads.</strong>
+<br/><br/>
+Navigate through your purchased items and find GrandBlog. Click download button then you will se 2 options. <strong>Main file </strong>contain<strong> </strong>everything. <strong>Installable Wordpress Theme </strong>is included only installable Wordpress theme file. Check list of what's included when you download the main file option.
+<ol>
+	<li>Installable Theme File (.zip) - You can upload this file to your Wordpress to install the theme.</li>
+	<li>Documentation - Contain theme documentation file.</li>
+	<li>Licensing Folder - Contain all licensing info files.</li>
+	<li>Changelog (.txt) - Included all theme versions changelog info</li>
+</ol>
+		</p>
+		
+		<h4>Theme Support</h4>
+		<p>
+			All of our themes come with free support and currently we handle all support questions through <a href="https://themegoods.ticksy.com/" target="_blank"><strong>Our Support System</strong></a>. 
+	
+		<br/>
+		
+		<p>
+		In order to help speed up solution for your requests. Please follow steps below before submitting a new ticket. This is for the benefit of everyone in order to help find the solution for your question quickly.
+		</p>
+		
+		<ol>
+			<li>Make sure you are running the latest version of theme and the latest version of WordPress.</li>
+			<li>Check out theme documentation for the answer to your question.</li>
+			<li>Disable any additional 3rd party plugins you are using to check if it fixes the issue.</li>
+			<li>If you still have the issue. Submit a ticket with URL of page which has issue.</li>
+		</ol>
+		
+		</p>
+
+<strong>Support includes</strong>
+<ul>
+	<li>Responding to questions or problems regarding the item and its features</li>
+	<li>Fixing bugs and reported issues</li>
+	<li>Providing updates to ensure compatibility with new software versions</li>
+</ul>
+<strong>Item support does not include</strong>
+<ul>
+	<li>Customization and installation services</li>
+	<li>Support for third party software and plug-ins</li>
+</ul>
+		</p>
+		
+		<hr>
+		
+		<h3 id="installation"><strong>B) Installation</strong> - <a href="#toc">top</a></h4>
+		
+		<p>
+			In order to begin installing GrandBlog theme. You need the latest version of Wordpress. Here is <a href="http://wordpress.org/">the download URL</a>. Once you downloaded and set it up, You are ready to go.
+		</p>
+		
+		<p>
+			Upon downloading the package, you will have an<strong> Installable Theme File (.zip)</strong> inside the theme package. Follow the steps below to install theme<br/><br/>
+
+<img class="size-full wp-image-25" alt="Screen Shot 2557-03-09 at 3.12.09 PM" src="assets/images/Screen-Shot-2557-03-09-at-3.12.09-PM.png" width="631" height="350" />
+<br/>
+<ol>
+	<li> Go to your Wordpress Dashboard and navigate to <strong>Appearance &gt; Themes</strong></li>
+	<li>Click <strong>Add new</strong> and hit <strong>upload</strong> button</li>
+	<li>Select <strong>GrandBlog Installable Theme File (.zip) </strong>file from your computer and click<strong> "Install Now"</strong> button</li>
+	<li>Once finished uploading theme file. Go to <strong>Appearance &gt; Themes</strong> and activate it.</li>
+	<li>Then you will be redirected to theme admin panel page.</li>
+</ol>
+<br/>
+<h4>Common Wordpress Installation Issue</h4>
+
+Missing style sheet error when installing the theme A common issue that can occur with users new to installing WordPress themes is a “Broken theme and/or stylesheets missing” error message being displayed when trying to upload or activate the theme. This error message does not mean that the theme you have purchased is broken, it simply means it has been uploaded incorrectly. <a href="http://support.envato.com/index.php?/Knowledgebase/Article/View/269">Luckily, there is a very easy fix.</a>
+		</p>
+
+		<h4>Wordpress Tutorials</h4>
+		
+		<p>
+			In order to use the theme. You have to install a working version of WordPress. If you are new to WordPress and need help installing it. Below are few tutorials and video tutorials created by WordPress and WooThemes.
+		</p>
+		
+		<ol>
+			<li><a href="http://codex.wordpress.org/Installing_WordPress" target="_blank">WordPress Codex</a></li>
+			<li><a href="https://vimeo.com/17147778" target="_blank">How to install WordPress video</a></li>
+			<li><a href="http://codex.wordpress.org/First_Steps_With_WordPress" target="_blank">First Steps With WordPress</a></li>
+			<li><a href="http://codex.wordpress.org/FAQ_New_To_WordPress" target="_blank">FAQ New To WordPress</a></li>
+		</ol>
+		
+		<h4>Required Plugins</h4>
+		
+		<ul>
+			<li>
+				<strong>GrandBlog Theme Gallery and Shortcode</strong> – Add theme gallery functionality and shortcode.
+			</li>
+			<li>
+				<strong>oAuth Twitter Feed for Developers</strong> - Twitter API settings plugin.
+			</li>
+		</pul>
+		
+		<h4>Additional Plugins We use on demo site</h4>
+		
+		<ul>
+			<li><a href="https://wordpress.org/plugins/wp-review/" target="_blank">WP Review</a> – helps provide post review feature.</li>
+			<li><a href="https://wordpress.org/plugins/ewww-image-optimizer/" target="_blank">EWWW Image Optimizer</a> – helps optimise your images file size without reducing its quality.</li>
+			<li><a href="https://wordpress.org/plugins/sharpen-resized-images/" target="_blank">Sharpen Resized Image</a> – helps sharpen your image quality without increasing file size.</li>
+			<li><a href="https://wordpress.org/plugins/post-types-order/" target="_blank">Post Type Order</a> – helps order all custom post type items using drag&amp;drop interface.</li>
+			<li><a href="https://wordpress.org/plugins/wp-super-cache/" target="_blank">WP Super Cache</a> – add caching to your WordPress for better loading speed.</li>
+		</ul>
+		
+		<h4>Import Demo Content</h4>
+		
+		When you first install the theme. It won’t included all extra content that you have seen from live demo site. You can choose to import demo contents or only demo settings and here are the different.<br/><br/>
+		
+		<p>
+			What’s included: posts, pages, images, videos and theme settings (typography, colors, styling and theme options).
+		</p>
+
+		<ol>
+			<li><strong>Install and activate GrandBlog Custom Post Type&nbsp;plugin before you proceed.</strong></li>
+			<li>Open Theme Setting &gt;&nbsp;Demo Content then select which demo you want to import and click “Import Selected”.</li>
+			<li>It can take few minutes to import everything (depends on your webhost location and connection speed).</li>
+			<li>Once it’s completed you will see success message and you can now enjoy demo content.</li>
+		</ol>
+		
+		<strong>Common Issues</strong>
+		
+		<ol>
+			<li><strong>Demo Import Fails: “Sorry but your import failed.”</strong></li>
+			<li>If you get this error, most likely the importer can not work with your webhost. You will need to ask your webhost to increase&nbsp;max_execution_time&nbsp;(or any other webserver timeout to at least 300 secs) and memory_limit (to at least 196M).Another thing which might solve the issue is to increase WordPress memory limit setting. Add below code to your wp-config.php before importing demo content.define(‘WP_MEMORY_LIMIT’, ‘500M’);<br>
+			define( ‘WP_MAX_MEMORY_LIMIT’, ‘500M’ );Basically, If the limits on your server settings are very low then the content will not import.</li>
+		</ol>
+		
+		<hr/>
+		
+		<h4 id="settingupheader">B 1) Setup Header - <a href="#toc">top</a></h4>
+		
+		<h4>Setting up Menu</h4>
+		
+		<p>
+			Theme Support custom WordPress menu, you can organise them into dropdown menu too.<br/>
+<h3><img class="alignnone size-full wp-image-71" alt="Screen Shot 2557-03-09 at 9.29.16 PM" src="assets/images/Screen-Shot-2557-04-07-at-8.05.49-PM.png" width="1103" height="462" /></h3><br/>
+<ol>
+	<li><strong>Go to Appearance &gt; Menus.</strong> Click "Create Menu" button</li>
+	<li>To add menu items, select one of your pages/posts on the left hand boxes. Then click "Add To Menu".</li>
+	<li>If you want to add custom link menu item (for example home link). Select "Links" and enter URL, Link Text there.</li>
+	<li>You can organise your menu items using drag&amp;drop functionality. Simple drag a menu item right below to the parent menu item.</li>
+	<li>After setting up your menu, scroll down to the bottom of the page then assign the menu to <strong>"Primary Menu" in the Theme Locations box.</strong></li>
+</ol>
+
+	<strong>All Theme menu locations options</strong>
+	
+	<ul>
+		<li>Primary Menu - Main menu under logo</li>
+		<li>Top Bar Menu - Menu at top of page layout (doesn't support sub menu)</li>
+		<li>Side (Mobile) Menu - Slide in menu. It's optional on desktop and primary menu for mobile devices</li>
+		<li>Footer Menu - Menu at bottom of page layout (doesn't support sub menu)</li>
+	</ul>
+
+For those who are not familiar with Wordpress menu system below are video tutorial.<br/><br/>
+
+<iframe src="http://www.youtube.com/embed/3TkXaoMIzQ4" height="371" width="660" allowfullscreen="" frameborder="0"></iframe><br/><br/><br/>
+		
+		<h4>Sticky Menu (Optional)</h4>
+		
+		<p>
+			If you enable sticky menu option. When visitor scroll down to page. The menu bar will stay at top while visitor scrolling. You can enable this option via&nbsp;<strong>Appearance &gt; Menu &gt; General&nbsp;&gt;Enable Sticky Menu</strong>
+		</p>
+		
+		<h4>Mega Menu (Optional)</h4>
+		
+		<p>
+			<img src="assets/images/Screen-Shot-2558-07-10-at-4.22.38-PM-1024x170.png" class="left"/>
+		</p>
+		
+		<p>
+			Mega Menu is extensive sub menu which allow you to display large amount menu items into columns. You can select from 2-5 columns. To setup mega menu. Open <strong>Appearance &gt; Menus&nbsp;</strong>then you can drag menu items to be child of parent items.
+		</p>
+		
+		<p>
+			<img src="assets/images/Screen-Shot-2558-05-18-at-10.29.46-AM.png" class="left"/>
+		</p>
+		
+		<p>
+			On menu parent item, open its option box and add class “<strong>megamenu</strong>” to enable mega menu display. Then enter number of columns you want. For example if you want to display mega menu in 4 columns enter class “<strong>col4</strong>“.
+		</p>
+		
+		<p>
+			<img src="assets/images/Screen-Shot-2558-05-18-at-10.31.11-AM.png" />
+		</p>
+		
+		<p>So you need to add and organise menu items of this mega menu into 4 columns. Please see above screenshot of Appearance &gt; Menus to get an example.</p>
+		
+		<p>You can also can display or hide columns name.</p>
+		
+		<p>
+			<img src="assets/images/Screen-Shot-2558-05-18-at-10.33.08-AM.png" />
+		</p>
+		
+		<p>By default it displays each mega menu columns name ex. Project Fullwidth, Project Grid etc. You can also hide it by open menu item option and add “<strong>hidden</strong>” CSS class.</p>
+		
+		<h4>Customise Main Menu Options and Colors</h4>
+		
+		<p>You can fully customise main menu options ex. typography, colors, background colors etc. Go to <strong>Appearance &gt; Customize &gt; Menu</strong></p>
+		
+		<h4>Setup Top Bar Menu (Optional)</h4>
+		
+		<ol>
+			<li>Go to <strong>Appearance &gt; Menus</strong>. Click “Create Menu” button</li>
+			<li>To add menu items, select one of your pages/posts on the left hand boxes. Then click “Add To Menu”.</li>
+			<li>If you want to add custom link menu item (for example home link). Select “Links” and enter URL, Link Text there.</li>
+			<li>You can organise your menu items using drag&amp;drop&nbsp;functionality. Simple drag a menu item right below to the parent menu item.</li>
+			<li>After setting up your menu, scroll down to the bottom of the page then assign the menu to <strong>“Top Bar Menu”</strong> in the Theme Locations box.</li>
+		</ol>
+		
+		<p><strong>Note: top Bar Menu is not support sub menu.</strong></p>
+		
+		<h4>Setup Side Menu (Mobile Menu)</h4>
+		
+		<p>
+			Side menu is hidden by default. Visitor click three bar icon on the top right of screen to open it. It’s also main menu or tablet (portrait view) and mobile devices.
+		</p>
+		
+		<ol>
+			<li>Go to <strong>Appearance &gt; Menus</strong>. Click “Create Menu” button</li>
+			<li>To add menu items, select one of your pages/posts on the left hand boxes. Then click “Add To Menu”.</li>
+			<li>If you want to add custom link menu item (for example home link). Select “Links” and enter URL, Link Text there.</li>
+			<li>After setting up your menu, scroll down to the bottom of the page then assign the menu to <strong>“Side (Mobile) Menu”</strong> in the Theme Locations box.</li>
+		</ol>
+		
+		<h4>Customise Side Menu Options and Colors</h4>
+		
+		<p>
+			<img src="assets/images/Screen-Shot-2558-05-18-at-10.43.21-AM-267x1024.png" />
+		</p>
+		
+		<p>You can fully customise main menu options ex. typography, colors, background colors etc. Go to <strong>Appearance &gt; Customize &gt; Menu &gt; Side Menu</strong></p>
+		
+		<h4>Search on Side Menu</h4>
+		
+		<p>
+			<img src="assets/images/Screen-Shot-2558-05-18-at-10.48.49-AM.png" />
+		</p>
+		
+		<p>To add search function to side menu. Open&nbsp;<strong>Appearance &gt; Customize &gt; Menu &gt; Search &gt; Enable Search</strong>. It displays&nbsp;search bar at the top of side menu.</p>
+		
+		<h4>Instant Search</h4>
+		
+		<p>
+			<img src="assets/images/Screen-Shot-2558-07-10-at-4.26.11-PM.png"/>
+		</p>
+		
+		<p>Instant search use AJAX technology to returns search results as you type.Open<strong>Appearance &gt; Customize &gt; Menu &gt; Search &lt; Enable Instant Search</strong></p>
+		
+		<h4>Setup Footer Menu (Optional)</h4>
+		
+		<ol>
+			<li>Go to <strong>Appearance &gt; Menus</strong>. Click “Create Menu” button</li>
+			<li>To add menu items, select one of your pages/posts on the left hand boxes. Then click “Add To Menu”.</li>
+			<li>If you want to add custom link menu item (for example home link). Select “Links” and enter URL, Link Text there.</li>
+			<li>You can organise your menu items using drag&amp;drop&nbsp;functionality.</li>
+			<li>After setting up your menu, scroll down to the bottom of the page then assign the menu to “<strong>Footer Menu</strong>” in the Theme Locations box.</li>
+			<li>Open <strong>Appearance &gt; Customize &gt; Footer&nbsp;&gt; Copyright&nbsp;&gt;&nbsp;Copyright Right Area Content</strong> and select “Footer Menu”.</li>
+		</ol>
+		
+		<p><strong>NOTE: Footer menu is not support sub menu.</strong></p>
+		
+		<h4>Add Contact Info (Optional)</h4>
+		
+		<p>You can add contact information displays on top bar. Go to&nbsp;<strong>Appearance &gt; Customize &gt; Menu &gt; Contact Info</strong></p>
+		
+		<p><strong>Note: Please make sure you enable Top Bar in order to display contact info content.</strong></p>
+
+<h4>Setup Social Icons</h4>
+
+<p>
+First you need to add your social media accounts. Go to <strong>Theme Settings > Socials Profiles</strong> and enter your profiles accounts there. If you don’t want to display some social icons, simply leave them blank and it won’t displays on live site.
+</p><br/>
+
+<h4>Upload Logo</h4>
+
+<p>
+By default theme displays its standard logo in header. You can replace it with your logo image. Go to Appearance > Customize > Logo & Favicon  Click “Select Image” button and select logo image from your computer or media library.
+</p>
+
+<h4>Favicon (Optional)</h4>
+
+<img src="assets/images/Screen-Shot-2558-05-18-at-10.19.48-AM.png"/>
+
+<p>Favicon option is also on<strong style="color: #222222;">Appearance &gt; Customize &gt; Logo &amp; Favicon</strong>. Favicon is an icon for your site display in various places including browser address bar, or next to website name in bookmark list. You simply click select image&nbsp;button and select favicon file to upload (recommend .png file)</p>
+
+<h4>Top Bar</h4>
+
+<p>Top bar allow to display extended content ex. top menu, social icons etc. above main menu area, To enable it open&nbsp;<strong style="color: #222222;">Appearance &gt; Customize &gt; Menu &gt; Top Bar</strong></p>
+
+<p>
+	<img src="assets/images/Screen-Shot-2558-07-10-at-4.20.45-PM.png"/>
+</p>
+
+<p>There are options to change the top bar&nbsp;background color, font color and border color too. Simply click on the colorbox to open color picker panel. Select color you want and&nbsp;once finish customising, save changes.</p>
+		
+		<hr/>
+		
+		<h4 id="settingupfooter">B 2) Setting up Footer - <a href="#toc">top</a></h4>
+		
+		<p>The first area of theme&nbsp;footer is a widgetized section which you can displays them into 1-4 columns. This content can be organised in <strong>WordPress Dashboard &gt; Appearance &gt; Widgets</strong></p>
+		
+		<p><strong>Setup Footer Sidebar</strong></p>
+		
+		<ol>
+			<li>First you have to enable it. Go to<strong> Appearance &gt; Customize &gt; Footer &gt; General &lt; Footer Sidebar Columns</strong></li>
+			<li>Select number of columns to display from 1-4</li>
+		</ol>
+		
+		<p><strong>Setup Footer Sidebar Widgets</strong></p>
+		
+		<p>
+			<img src="assets/images/Screen-Shot-2557-03-09-at-10.10.18-PM.png" />
+		</p>
+		
+		<ol>
+			<li>To add widgets, go to <strong>Appearance &gt; Widgets</strong></li>
+			<li>You will find “Footer Widget” section. Simply drag and drop widgets you want from the left side boxes into the “Footer Sidebar”.</li>
+		</ol>
+		
+		<p><strong>Setup Footer Colors</strong></p>
+		
+		<p>You can change footer background color, font color and etc. Go to&nbsp;<strong>Appearance &gt; Customize &gt; Footer &gt; Colors&nbsp;</strong>once finish customising. Click “Save All Changes” button.</p>
+		
+		<p><strong>Setup Copyright Bar&nbsp;</strong></p>
+		
+		<p>Below the widgetized area of footer is copyright bar where you can add your &nbsp;copyright text including link to it.&nbsp;Go to&nbsp;<strong>Appearance &gt; Customize &gt; Footer</strong><strong>&nbsp;&gt;&nbsp;Copyright&nbsp;</strong></p>
+		
+		<p>The go to top option if you enable it. It will display arrow up button when visitor click on it. It will redirect to the top of page.</p>
+		
+		<h4>Instagram Footer Photostream</h4>
+		
+		<p>
+			<img src="assets/images/Screen-Shot-2558-07-10-at-5.55.55-PM.png" /><br/>
+			<img src="assets/images/Screen-Shot-2558-07-10-at-5.56.17-PM.png" />
+		</p>
+		
+		<ol>
+			<li>Go to Theme Setting &gt; Social Profiles and enter instagram username option.</li>
+			<li>Next you will need to login to your Instagram account and <a href="http://instagram.pixelunion.net/" target="_blank">click here</a> to find Access Token.</li>
+			<li>Once you get Access Token.&nbsp;Go to Theme Setting &gt; Social Profiles and enter Instagram Access Token option then save changes</li>
+			<li>Now you can add Custom Instagram&nbsp;Widget to any sidebar you want using Appearance &gt; Widgets.</li>
+		</ol>
+		
+		<p>
+			You can also display Instagram photostream at the bottom of page before footer. Please make sure you follow above steps of how to setup Instagram Access Token. Then go to Theme Setting > Social Profiles > Photo Stream and Select photo stream photo source. It displays before footer area to “Instagram”.
+		</p>
+		
+		<h4>Flickr Footer Photostream</h4>
+		
+		<p>
+			You can also display Flickr photostream at the bottom of page before footer. Go to Theme Setting > Social Profiles > Photo Stream and Select photo stream photo source. It displays before footer area to “Flickr”.
+		</p>
+		
+		<p>
+			<img src="assets/images/Screen-Shot-2558-07-10-at-6.00.52-PM.png" />
+		</p>
+		
+		<hr/>
+		
+		<h4 id="settingupsidebar">B 3) Setting up sidebar - <a href="#toc">top</a></h4>
+		
+		<h4>Pre defined Sidebars</h4>
+		
+		<ul>
+			<li>Page Sidebar – Default sidebar for homepage and any new pages created.</li>
+			<li>Blog Sidebar – Default sidebar for any new blog template created.</li>
+			<li>Contact Sidebar – Default sidebar for contact page.</li>
+			<li>Single Post Sidebar – Sidebar for all single posts.</li>
+			<li>Archives Sidebar – Sidebar for post archive page.</li>
+			<li>Category Sidebar –&nbsp;Sidebar for post category page.</li>
+			<li>Tag Sidebar –&nbsp;Sidebar for post tag page.</li>
+			<li>Footer Sidebar –&nbsp;Sidebar for footer widgets area.</li>
+		</ul>
+		
+		<h4>Create a New Sidebar</h4>
+		
+		<p>Theme has pre-defined sidebar but you can also create your own custom sidebar for your pages.</p>
+		
+		<p>
+			<img src="assets/images/Screen-Shot-2558-05-18-at-1.23.37-PM.png"/>
+		</p>
+		
+		<ol>
+			<li>Go to Theme Settings &gt; General you will see Custom Sidebar Settings.</li>
+			<li>Enter sidebar name you want to create and click save changes</li>
+		</ol>
+		
+		<h4>Assign widgets to the sidebar</h4>
+		
+		<p>
+			<img class="alignnone size-full wp-image-134" alt="Screen Shot 2557-03-10 at 11.17.06 AM" src="assets/images/Screen-Shot-2557-03-10-at-11.17.06-AM.png" width="1012" height="531" />
+		</p>
+		
+		<p>You can add widgets to the sidebar using <strong>Appearance &gt; Widgets &nbsp;</strong>You will find your selected widget on the left&nbsp;side. Simply drag and drop widgets you want from the left side boxes into the sidebar box.</p>
+		
+		<hr/>
+		
+		<h4 id="settinguppage">B 4) Setting up Pages & Contact Page</h4>
+		
+		<p>
+			<img src="assets/images/Screen-Shot-2558-03-02-at-8.56.22-PM.png"/>
+		</p>
+			
+		<ol>
+			<li>Go to WordPress Dashboard &gt; Pages &gt; Add New</li>
+			<li>Add page title and you will find “Page Options” box on the right side.</li>
+			<li>Select your parent page in&nbsp;page attribute option box on the bottom right.</li>
+			<li>Select your page template from template dropdown list in&nbsp;page attribute option box on the bottom right.</li>
+			<li>Enter your page content to editing field. You can use visual or text editor. Page content is mainly built using text, HTML or shortcodes.</li>
+		</ol>
+		
+		<h4>Page With Sidebar</h4>
+		
+		<p>Theme has 2 general page with sidebar templates. You can select between left and right sidebar templates. Follow above steps and when you select page template select&nbsp;<strong>Page With Right Sidebar</strong> or&nbsp;<strong>Page With Left Sidebar&nbsp;</strong>as page template.</p>
+		
+		<p>Next look at page option box, select the sidebar you want to display on this page and save changes.</p>
+		
+		<h4>Page Header Background</h4>
+		
+		<p>When you create a page. Check “Display Page Title” in page option meta box. You can customise page title alignment, typography, font size etc. Go to Theme Setting &gt; Page Title.</p>
+		
+		<p>
+			<img src="assets/images/Screen Shot 2558-08-01 at 4.37.18 PM.png"/>
+		</p>
+		
+		<p>When you create a page. You can upload background image to header area. Look at featured image at the bottom right of edit page/post and upload image you want to display as header background image</p>
+		
+		<h4>Shortcode Generator</h4>
+		
+		<p>You can use Shortcode Generator in Shortcode option box below editing field to generate shortcode. Simply select shortcode you want to use and enter its options. Once finish click “Generated Shortcode” and copy shortcode to editing fields.</p>
+		
+		<p>
+			<img src="assets/images/Screen Shot 2557-04-08 at 1.39.31 PM.png"/>
+		</p>
+		
+		<h4>Page Options</h4>
+		
+		<p>
+			<img src="assets/images/Screen Shot 2558-08-01 at 4.40.17 PM.png"/>
+		</p>
+		
+		<ul>
+			<li><strong>Hide&nbsp;Page Title</strong> –&nbsp;Check this option if you want to hide&nbsp;page title.</li>
+			<li><strong>Page Tagline(Optional)</strong> –&nbsp;Enter page tagline. It will displays under page title (optional)</li>
+			<li><strong>Page Sidebar(Optional)</strong> –&nbsp;Select this page’s sidebar to display (support only page templates with sidebar)</li>
+		</ul>
+		
+		<h4>Setup Contact Page</h4>
+		
+		<p>
+			<img src="assets/images/12.png" class="left"/>
+			First, you have to setup your email address. <strong>Open Theme Setting > General > Contact Form Setting</strong> and setup your email address.
+			<br/><br/>
+			From your admin sidebar, open <strong>Pages > Add New</strong>. You will get add new page form. Enter page title and description.
+			<br/><br/>
+			Next look at <strong>Page Attributes" box</strong>. Select <strong>"Contact"</strong> for page template and click on "Publish".
+		</p>
+		
+		<br style="clear:both"/><br/>
+		
+		<h4>Setup About Page</h4>
+		
+		<p>
+			From your admin sidebar, open <strong>Pages > Add New</strong>. You will get add new page form. Enter page title and description.
+			<br/><br/>
+			Next look at <strong>Page Attributes" box</strong>. Select <strong>"Default Template"</strong> for page template and click on "Publish".
+		</p>
+		
+		<p>
+			Using this code below for sample about page content
+<pre>
+[tg_small_content]&#x3C;blockquote&#x3E;Good design is making something intelligible and memorable.&#x3C;br/&#x3E;Great design is making something memorable and meaningful.&#x3C;/blockquote&#x3E;
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.[/tg_small_content]
+
+[caption id=&#x22;attachment_483&#x22; align=&#x22;alignnone&#x22; width=&#x22;1440&#x22;]&#x3C;img src=&#x22;http://themes.themegoods2.com/grandblog/demo/wp-content/uploads/2015/07/22.jpg&#x22; alt=&#x22;Silver Lake&#x22; width=&#x22;1440&#x22; height=&#x22;960&#x22; class=&#x22;size-full wp-image-483&#x22; /&#x3E; Silver Lake[/caption]
+
+[one_half]
+Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse nihil, flexitarian Truffaut synth art party deep v chillwave. &#x3C;i&#x3E;Seitan High Life reprehenderit consectetur cupidatat kogi. Et leggings fanny pack, elit bespoke vinyl art party&#x3C;/i&#x3E; Pitchfork selfies master cleanse Kickstarter seitan retro. Drinking vinegar stumptown yr pop-up artisan sunt.
+[/one_half]
+[one_half_last]
+Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse nihil, flexitarian Truffaut synth art party deep v chillwave. &#x3C;i&#x3E;Seitan High Life reprehenderit consectetur cupidatat kogi. Et leggings fanny pack, elit bespoke vinyl art party&#x3C;/i&#x3E; Pitchfork selfies master cleanse Kickstarter seitan retro. Drinking vinegar stumptown yr pop-up artisan sunt.
+[/one_half_last]
+</pre>
+		</p>
+		
+		<hr/>
+		
+		<h4 id="homepagecontents">B 5) Setting up Homepage - <a href="#toc">top</a></h4>
+		
+		<p>
+			By default, when you activated theme. Your homepage will display your recent posts and you can change its option. <strong>From your admin sidebar Settings > Reading > Front page displays select "Your latest posts"</strong>. You can also change number of blog posts per page there too.
+		</p>
+		
+		<h4>Change homepage layout</h4>
+		
+		<p>
+			<img src="assets/images/Screen Shot 2558-08-01 at 4.52.09 PM.png"/>
+		</p>
+		
+		<p>
+			You can customize homepage layout. <strong>Go to Appearance > Customize > Blog > Layout > Homepage Layout</strong> and select layout you want then save changes. You can also customize other default Wordpress pages ex. category, archive etc. there too.
+		</p>
+		
+		<h4>Setting up Slider</h4>
+		
+		<p>
+			<img src="assets/images/Screen Shot 2558-08-01 at 4.54.40 PM.png"/>
+		</p>
+		
+		<p>
+			You can customize homepage layout. <strong>Go to Appearance > Customize > Blog > Slider</strong> and check "Display Slider" option. Next select slider layout you want and slider category so slider will displays only selected category's posts.
+		</p>
+				
+		<hr/>
+		
+		<h4 id="settingupblog">B 6) Setting up Blog Post - <a href="#toc">top</a></h4>
+		
+		<h4>Creating a blog post</h4>
+		
+		<p>
+			First thing to create blog content is to create a post post.  Theme has various post options for you display different content on your blog post. Here are the steps to create a blog post.
+		</p>
+		
+		<p>
+			<img src="assets/images/Screen-Shot-2558-03-03-at-11.25.11-AM.png"/>
+		</p>
+		
+		<ol>
+			<li>Go to <strong>WordPress Dashboard &gt; Posts &gt; Add New</strong></li>
+			<li>Enter post title and content. You can use any shortcode or HTML&nbsp;to editing field.</li>
+			<li>Assign this post to category using categories box on the right side</li>
+			<li>Add tags to this post. Type tag name in to the field in Tags box on the right side.</li>
+			<li>Upload post featured image using set featured box on the bottom right side. All pages will use this image for post preview image and thumbnail.</li>
+			<li>Once you finish, click Publish.</li>
+		</ol>
+		
+		<h4>Post Options</h4>
+		
+		<ul>
+			<li><strong>Post Layout</strong> – Select single post page layout between fullwidth and with right sidebar.</li>
+			<li><strong>Featured Content Type</strong>&nbsp;– Select featured content type to displays at the top of this post. You can select from Image, Gallery, Vimeo Video and Youtube Video.</li>
+			<li><strong>Gallery</strong> – Select image gallery you want to display at the top of this post. (if you select featured content type as Gallery)</li>
+			<li><strong>Vimeo Video ID</strong>&nbsp;–&nbsp;Enter Vimeo Video ID ex. 73317780&nbsp;you want to display at the top of this post. (if you select featured content type as Vimeo Video)</li>
+			<li><strong>Youtube&nbsp;Video ID</strong>&nbsp;–&nbsp;Enter Youtube&nbsp;Video ID ex. <span style="color: #999999;">6AIdXisPqHc</span>&nbsp;you want to display at the top of this post. (if you select featured content type as Youtube&nbsp;Video)</li>
+		</ul>
+		
+		<h4>Post Review Options</h4>
+		
+		<p>
+			To have review feature. Please make sure you install this plugin name "<a href="https://wordpress.org/plugins/wp-review/" target="_blank">WP Review</a>". Then when you edit post, there is Review box under Shortcode Options box.
+		</p>
+		
+		<p>
+			<img src="assets/images/Screen Shot 2558-11-06 at 6.10.51 PM.png"/>
+		</p>
+		
+		<p>
+			Select "Review Type" you want. For example "Star" then you can add review feature name and star. Once you finish customising review options for the post then update the post.
+		</p>
+		
+		<h4>Single Post Settings</h4>
+		
+		<p>
+			<img src="assets/images/Screen Shot 2558-08-01 at 5.30.56 PM.png"/>
+		</p>
+		
+		<ul>
+			<li><strong>Display&nbsp;post header</strong>&nbsp;-Check this to display featured image as post header background</li>
+			<li><strong><strong>Display</strong>&nbsp;featured content </strong>&nbsp;– This option will display post’s featured image or gallery at the top of single post page.</li>
+			<li><strong><strong>Display</strong>&nbsp;tag&nbsp;</strong>&nbsp;– This option will display post’s tags&nbsp;at the bottom&nbsp;of single post page.</li>
+			<li><strong><strong>Display</strong>&nbsp;about author&nbsp;</strong>&nbsp;– This option will display post’s author information&nbsp;at the bottom&nbsp;of single post page.</li>
+			<li><strong><strong>Display</strong>&nbsp;Related posts</strong> – This option will display related posts under main post content.</li>
+		</ul>
+		
+		<h4>Posts per page</h4>
+		
+		<p>
+			<img src="assets/images/52.png" class="left" style="max-width:400px;"//>
+			From your admin sidebar, open <strong>Settings > Reading</strong>. Then adjust number of "Blog pages show at most". Once you finish, click "Save Changes".
+		</p>
+		
+		<hr/>
+		
+		<h4 id="settingcategory">B 7) Setting up Category - <a href="#toc">top</a></h4>
+		
+		<p>
+			<img src="assets/images/Screen Shot 2558-08-01 at 5.34.31 PM.png"/>
+		</p>
+		
+		<p>
+			You can organise posts into category. Each post can be assigned to multiple categories. First you have to create a category. Open Posts > Categories. You will see list of current categories you have. To add new one. Enter Category name, slug and click "Add New Category" button.
+		</p>
+		
+		<p>
+			<img src="assets/images/Screen Shot 2558-08-01 at 5.35.36 PM.png"/>
+		</p>
+		
+		<p>
+			Now when you create a blog post. Look at categories option box, select categories you want to assign and save changes.
+		</p>
+		
+		<h4>Setting up Category Page</h4>
+		
+		<p>
+			<img src="assets/images/Screen Shot 2558-08-01 at 5.38.32 PM.png"/>
+		</p>
+		
+		<p>
+			When you created a category. Wordpress actually creates category for you. To add a category archive to one of your menus, go to “Appearance > Menus” in the WordPress admin. Look for the section labeled “Categories.” Then, select the categories you want and add them to your menu.
+		</p>
+		
+		<p>
+			You can customize category page layout. <strong>Go to Appearance &gt; Customize &gt; Blog &gt; Layout &gt; Category Page Layout</strong> and select layout you want then save changes.
+		</p>
+		
+		<hr/>
+		
+		<h4 id="settingupimagegallery">B 8) Setting up image gallery - <a href="#toc">top</a></h4>
+		
+		<p>First you have to create a gallery. From your admin sidebar, open&nbsp;<strong>Galleries &gt; Add New Gallery</strong>. You will get add new gallery form. Enter gallery title and description then click “Publish”.</p>
+		
+		<p>
+			<img src="assets/images/Screen-Shot-2558-07-10-at-5.38.50-PM.png"/>
+		</p>
+		
+		<p>Next you have to add images to this gallery. From gallery admin page.&nbsp;<strong>Click on “Upload Image”.</strong></p>
+		
+		<p>Then select images you want to upload to this gallery. Once you finish upload each image. It will automatically attach to this gallery. You can also change image caption&nbsp;and description by clicking image from&nbsp;this page. If you want to change order of images within gallery. You can easily <strong>drag&amp;drop image next to each one</strong>. Once you finish dragging, click “Update” to save changes.</p>
+		
+		<h4>Setting up gallery as post featured content</h4>
+		
+		<p>
+			<img src="assets/images/Screen Shot 2558-08-01 at 5.43.20 PM.png"/>
+		</p>
+		
+		<p>
+			When you create a post. Look at post option box, select "Gallery" as content type. You will see gallery option with list of galleries. Select the one you want to display on this post and save changes.
+		</p>
+		
+		<hr/>
+		
+		<h4 id="settingupwidgets">B 9) Widgets - <a href="#toc">top</a></h4>
+		
+		<p>
+			<img class="alignnone size-full wp-image-321" alt="Screen Shot 2557-03-10 at 3.59.15 PM" src="assets/images/Screen-Shot-2557-03-10-at-3.59.15-PM.png" width="1018" height="716" /><br/><br/>
+
+All widgets can be used in standard Wordpress widget system in <strong>Appearance &gt; Widgets</strong>. You can drag&amp;drop the widget on the left side over sidebar option on the right side. Each widget has its settings option and you put as many widgets as you want to the sidebar. Once you change the setting of widget, please make sure you click <strong>Save</strong> button.<br/><br/>
+
+<h4>Twitter Widget Option</h4>
+In order to use new Twitter API. You have to register your application using your Twitter account. Please go to <a href="https://dev.twitter.com/apps/">https://dev.twitter.com/apps/</a> and login with your Twitter account<br/><br/>
+
+<img class="alignnone size-full wp-image-325" alt="Screen-Shot-2556-06-14-at-6.47.12-PM" src="assets/images/Screen-Shot-2556-06-14-at-6.47.12-PM.png" width="600" height="319" /><br/><br/>
+
+Create new application then click to create the access token, then refresh the page.<br/><br/>
+
+<img class="alignnone size-full wp-image-327" alt="Screen-Shot-2556-06-14-at-6.52.50-PM" src="assets/images/Screen-Shot-2556-06-14-at-6.52.50-PM.png" width="600" height="379" /><br/><br/>
+
+Next you will notice and bar stated that. <strong>This theme requires the following plugin: oAuth Twitter Feed for Developers.</strong>. Click "Begin installing plugin" to install the plugin. Then navigate to <strong>Settings > Twitter Feed Auth</strong><br/><br/>
+
+<img class="alignnone size-full wp-image-327" alt="Screen-Shot-2556-06-14-at-6.52.50-PM" src="assets/images/Screen Shot 2558-08-14 at 3.51.43 PM.png" /><br/><br/>
+
+Enter your API key, API secret, access token and access token secret there and you can add Twitter widget to sidebar using Appearance &gt; Widgets
+		</p>
+		
+		<h4>Facebook Page Like Widgets</h4>
+		
+		<p>
+			On theme demo site. There is Facebook Page widget which can easily create using <a href="https://wordpress.org/plugins/facebook-pagelike-widget/" target="_blank">this plugin</a>.
+		</p>
+		
+		<h4>Mailing list subscription Widgets</h4>
+		
+		<p>
+			On theme demo site. There is Mailing list subscription which can easily create using <a href="http://mailchimp.com/" target="_blank">MailChimp</a> server (You can create free account there ). You can <a href="https://wordpress.org/plugins/mailchimp-for-wp/" target="_blank">download the plugin here</a>.
+		</p>
+		
+		<h4>Instagram Widgets</h4>
+		
+		<p>
+			<img src="assets/images/Screen-Shot-2558-07-10-at-5.55.55-PM.png" /><br/>
+			<img src="assets/images/Screen-Shot-2558-07-10-at-5.56.17-PM.png" />
+		</p>
+		
+		<ol>
+			<li>Go to Theme Setting &gt; Social Profiles and enter instagram username option.</li>
+			<li>Next you will need to login to your Instagram account and <a href="http://instagram.pixelunion.net/" target="_blank">click here</a> to find Access Token.</li>
+			<li>Once you get Access Token.&nbsp;Go to Theme Setting &gt; Social Profiles and enter Instagram Access Token option then save changes</li>
+			<li>Now you can add Custom Instagram&nbsp;Widget to any sidebar you want using Appearance &gt; Widgets.</li>
+		</ol>
+		
+		<p>
+			Please make sure you follow above steps of how to setup Instagram Access Token. Then when you add Instagram widget to sidebar. Enter number of photos you want to displays and save changes.
+		</p>
+		
+		<hr/>
+		
+		<h4 id="customize">B 10) Theme Customize - <a href="#toc">top</a></h4>
+		
+		<p>
+			Theme also support Wordprss customize. Go to Appearance > Customize. It will load all customization options on the left side. Simple change each options and it will preview results instantly on the right side. Once you finish customising. Click "Save" button.
+		</p>
+		
+		<hr/>
+		
+		<h4 id="themetranslation">B 11) Theme Translation - <a href="#toc">top</a></h4>
+		
+		<p>Theme includes bunch of PO translation files for each languages so you can use standard translation tools to help translate theme output strings to your desired language.</p>
+		
+		<h4>WordPress Translation Setting</h4>
+		
+		<p>For Pre-Wordpress 4.0 users please follow below steps</p>
+		
+		<ol>
+			<li>Login to your FTP account and edit wp-config.php file.</li>
+			<li>In&nbsp;wp-config.php file, look for WPLANG constant for example <em>define(‘WPLANG’, ”);</em></li>
+			<li>Define&nbsp;WPLANG constant by adding ISO language code of your desired language. For example if you want to add German&nbsp;language. Use this code&nbsp;<em>define(‘WPLANG’, ‘de_DE.po’);</em></li>
+		</ol>
+		
+		<p>For WordPress 4.0 + users&nbsp;please follow below steps</p>
+		
+		<p><img src="assets/images/Screen-Shot-2558-03-03-at-5.45.48-PM.png"/></p>
+		
+		<ol>
+			<li>Login to your FTP account and edit wp-config.php file.</li>
+			<li>In&nbsp;wp-config.php file, look for WPLANG constant for example <em>define(‘WPLANG’, ”);</em></li>
+			<li>Define&nbsp;WPLANG constant by adding ISO language code of your desired language. For example if you want to add German&nbsp;language. Use this code&nbsp;<em>define(‘WPLANG’, ‘de_DE.po’);</em></li>
+			<li>Login to your WordPress Dashboard and navigate to Settings &gt; General Settings</li>
+			<li>Make sure “Site Language” option is set to your desired language.</li>
+		</ol>
+		
+		<h4>Storing Translation Files</h4>
+		
+		<p>By default storing inside theme folder. The theme language folder is <strong>wp-content/themes/tgGrandBlog/languages</strong> this method has one downside. Because whenevery you update the theme. The whole language folder will be replaced with original version which overwrite your translation files.</p>
+		
+		<p><strong>NOTE: </strong>So the solution is to backup your translation file before updating theme.</p>
+		
+		<h4>Translating The Theme</h4>
+		
+		<p>Theme use PO translation file which is industry standard translation method. In theme folder you will find a folder called languages. You will find each languages files store in the folder.</p>
+		
+		<ul>
+			<li><strong>*.po</strong> – A lists of all text strings in theme. The text strings are in English and you can add translation to each of text string.</li>
+			<li><strong>*.mo</strong> – This is the compiled .po file and is used by WordPress to translate the theme</li>
+		</ul>
+		
+		<p>If your language isn’t included in the theme language files. You have to create a new .po file from original Theme.po located in theme’s languages folder then save the new .po file with your language code for example&nbsp;<em>de_DE.po</em></p>
+		
+		<h4>Translating The Custom Post Type Plugin</h4>
+		
+		<p>Custom Post Type Plugin&nbsp;use PO translation file which is industry standard translation method. In plugins&nbsp;folder you will find a folder called languages. You will find each languages files store in the folder.</p>
+		
+		<p>If your language isn’t included in the theme language files. You have to create a new .po file from original GrandBlog-custom-post-en_US.po located in theme’s languages folder then save the new .po file with your language code for example&nbsp;GrandBlog-custom-post-<em>de_DE.po</em></p>
+		
+		<h4>How to translate Po file using Poedit Application</h4>
+		
+		<p>Poedit application is the popular application uses to edit po file translation and it’s free. <a href="http://poedit.net/" target="_blank">Click here to download Poedit application</a>.</p>
+		
+		<p><img src="assets/images/Screen-Shot-2558-03-03-at-6.17.45-PM.png"/></p>
+		
+		<p>Now download and install Poedit application. Open language file you want to translate for example en_US.po You will find all English string&nbsp;in Source Text box.</p>
+		
+		<p>Select text string you want to translate, add your translation text to “Translation” field. Once you finish translating. Save the file and it will automatically compiled to .mo file.</p>
+		
+		<hr>
+		
+		<h4 id="wpml">B 12) WPML Plugin For Multilingual Content - <a href="#toc">top</a></h4>
+		
+		<p>
+			GrandBlog support WPML plugin for Multilingual content . First you have topurchase WPML license from <a href="https://wpml.org" target="_blank">https://wpml.org</a> and your can download the plugin from your WPML account page (download WPML Multilingual CMS). Then install the plugin. From your admin sidebar, open <strong>Plugins &gt; Add New &gt; Upload</strong>. Then upload and install the plugin. Once you installed, activate it and it will be ready to use.<br/><br/>
+
+<img class="alignnone size-full wp-image-499" alt="Screen Shot 2557-03-16 at 6.44.06 PM" src="assets/images/Screen-Shot-2557-03-16-at-6.44.06-PM.png" width="887" height="502" /><br/><br/>
+
+Now you will have <strong>WPML menu</strong> on the bottom left of Wordpress Dashboard. The first step is to setup your current language.<br/><br/>
+
+<img class="alignnone size-full wp-image-500" alt="Screen Shot 2557-03-16 at 6.45.19 PM" src="assets/images/Screen-Shot-2557-03-16-at-6.45.19-PM.png" width="881" height="718" /><br/><br/>
+
+Next step. Select other languages you want to use on your site.<br/><br/>
+
+The last step is to add <strong>language switcher</strong> to your site. There are many ways to add it. You can select sidebar to display language switcher from the option "Choose where to display the language switcher widget".<br/><br/>
+
+If you are familiar with PHP coding. You can also add custom language switcher using PHP code. <a href="http://wpml.org/documentation/getting-started-guide/language-setup/custom-language-switcher/" target="_blank">Please see sample and tutorials here</a>.<br/><br/>
+
+Another option is to add language switcher to your menu. Check "Display the language switcher in the WP Menu". option and select your main menu.<br/><br/>
+
+<img class="alignnone size-full wp-image-508" alt="Screen Shot 2557-03-16 at 7.10.34 PM" src="assets/images/Screen-Shot-2557-03-16-at-7.10.34-PM.png" width="679" height="83" /><br/><br/>
+
+Next, go to your <strong>WPML account &gt; Downloads </strong>and download <strong>WPML String Translation</strong> plugin. Install the plugin. From your admin sidebar, open <strong>Plugins &gt; Add New &gt; Upload</strong>. Then upload and install the plugin. Once you installed, activate it and it will be ready to use.<br/><br/>
+
+<img class="alignnone size-full wp-image-511" alt="Screen Shot 2557-03-16 at 7.12.42 PM" src="assets/images/Screen-Shot-2557-03-16-at-7.12.42-PM.png" width="571" height="181" /><br/><br/>
+
+Open <strong>WPML &gt; Theme and plugins  localization</strong> and check "Translate by WPML." and click Save button. Now WPML should added all translation strings to the system.<br/><br/>
+
+<img class="alignnone size-full wp-image-513" alt="Screen Shot 2557-03-16 at 7.17.26 PM" src="assets/images/Screen-Shot-2557-03-16-at-7.17.26-PM.png" width="988" height="186" /><br/><br/>
+
+Open <strong>WPML &gt; String Translation</strong> you will see list of all translation text. Click translations and enter translated text.<br/><br/>
+
+This is a basic step to translate theme strings into multiple languages. You can learn more about advanced options and other WPML features from <a href="http://wpml.org/documentation/getting-started-guide/theme-localization/" target="_blank">WPML site</a>.
+		</p>
+		
+		<hr/>
+		
+		<h4 id="themeupdate">B 13) How to update the theme - <a href="#toc">top</a></h4>
+		
+		<ol>
+			<li>First you need to download the latest version of theme.&nbsp;Log into your Themeforest account and navigate to your downloads tab. Find the “GrandBlog” theme purchase.</li>
+			<li>Click the “download” button next to it and choose to download the “Installable WordPress Theme” which is just the WordPress file, or choose the “Main Files” which is the entire package which include theme documentation, plugins etc.</li>
+		</ol>
+		
+		<h4>Update using WordPress Dashboard</h4>
+		
+		<ol>
+			<li>Backup current Theme Setting &gt; Backup. You will get a .JSON file (just in case everything went wrong and you still have theme settings backup file to import).</li>
+			<li>Also you may want to use a plugin to automate backing up your current theme and uploading the new version: <a href="http://wordpress.org/extend/plugins/easy-theme-and-plugin-upgrades/" target="_blank">http://wordpress.org/extend/plugins/easy-theme-and-plugin-upgrades/</a></li>
+			<li>You need to deactivate “GrandBlog” theme in the <strong>Appearance &gt; Themes</strong> by simply activating a different theme. Once you activate a different theme, you can delete the GrandBlog theme. Don’t worry. You really won’t loose any of your data.</li>
+			<li>Get&nbsp;the “GrandBlog-v…installable.zip” file from <strong>Themeforest&nbsp;Account &gt; download</strong>. If you downloaded the “Main Files” from Themeforest, then you need to unzip the archive file you received, the GrandBlog-v…installable.zip&nbsp;will be inside of it.</li>
+			<li>Upload GrandBlog-v…installable.zip using&nbsp;<strong>Appearance &gt; Themes </strong>once you uploaded successfully, activate the theme.</li>
+		</ol>
+		
+		<h4>Update using FTP</h4>
+		
+		<ol>
+			<li>Backup current Theme Setting &gt; Backup. You will get a .JSON file (just in case everything went wrong and you still have theme settings backup file to import).</li>
+			<li>Also you may want to use a plugin to automate backing up your current theme and uploading the new version:&nbsp;<a href="http://wordpress.org/extend/plugins/easy-theme-and-plugin-upgrades/" target="_blank">http://wordpress.org/extend/plugins/easy-theme-and-plugin-upgrades/</a></li>
+			<li>Login to your FTP account.&nbsp;Navigate&nbsp;to <strong>wp-content &gt; themes</strong> location and backup your “GrandBlog” theme folder by saving it to your computer, or you can choose to simply delete it.&nbsp;Don’t worry. You really won’t loose any of your data.</li>
+			<li>Get&nbsp;the “GrandBlog-v…installable.zip” file from&nbsp;<strong>Themeforest&nbsp;Account &gt; download</strong>. If you downloaded the “Main Files” from Themeforest, then you need to unzip the archive file you received, the GrandBlog-v…installable.zip&nbsp;will be inside of it.</li>
+			<li>Drag and drop the new “GrandBlog” folder into&nbsp;<strong>wp-content &gt; themes&nbsp;</strong>and select “Replace” if you didn’t delete it.</li>
+		</ol>
+		
+		<h4>Common Issues</h4>
+		
+		<ol>
+			<li><strong>Are You sure you want to do this?</strong><br>
+			If you get this message. Please check with your webhost upload file size limit and ask them to increase the limitation.</li>
+			<li><strong>Theme install failed destination folder already exists</strong><br>
+			This is because WordPress allows you to have only 1 theme with the same name and folder. To get around this issue, please update theme using auto updater or FTP steps above.</li>
+		</ol>
+
+		<hr/>
+		
+		<h4 id="settingupstyling">B 14) Updating from existing theme - <a href="#toc">top</a></h4>
+		
+		<p>
+			If you update your existing blog site to GrandBlog theme. You have to run this <a href="http://wordpress.org/extend/plugins/regenerate-thumbnails/">plugin</a> to regenerate all posts's thumbnails from your existing theme setting. Once you installed the plugin, open Tools > Regen. Thumbnails and click on “Regenerate Thumbnails” button.
+		</p>
+		
+		<hr/>
+		
+		<h4 id="speedupsite">B 15) How to speed up your site using plugins - <a href="#toc">top</a></h4>
+		
+		<p>There are many ways to help speed up your site and here are some methods we use to speed up our demo sites and we want to share them to you.</p>
+		
+		<h4>CSS and Javascript Compression</h4>
+		
+		<p>You can enable CSS and Javascript compression via Theme Setting &gt; Script. This option will compress javascript CSS and javascript file to smaller size.</p>
+		
+		<h4>Caching Plugin</h4>
+		
+		<p>You can use 3rd party plugin to add caching to your WordPress site. It helps speed up response time to your visitors. Here are 2 plugins we recommend.</p>
+		
+		<ol>
+			<li><a href="https://wordpress.org/plugins/w3-total-cache/" target="_blank">W3 Total Cache</a>&nbsp;– Recommend for advanced user with many more options.</li>
+			<li><a href="https://wordpress.org/plugins/wp-super-cache/" target="_blank">WP Super Cache</a> – Easy to setup caching plugin. Recommend for normal user.</li>
+		</ol>
+		
+		<h4>Image Optimisation Plugin</h4>
+		
+		<p>Adding images to your content sometime causes site to load slowly. Here is&nbsp;<a href="https://wordpress.org/plugins/ewww-image-optimizer/" target="_blank">EWWW Image Optimizer</a>&nbsp;it helps optimise and compress your images files size without loosing quality.</p>
+		
+		<p>NOTE: If you already have image uploaded and install&nbsp;EWWW Image Optimizer. Please run <a href="https://wordpress.org/plugins/regenerate-thumbnails/" target="_blank">Regenerate Thumbnails plugin</a> so your previous uploaded images are optimised.</p>
+		
+		<hr/>
+		
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>ThemeGoods</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
