@@ -127,22 +127,6 @@ elseif(is_home())
         <?php
         	}
         ?>
-
-        <!-- Begin right corner buttons -->
-    	<div id="logo_right_button">
-    		<?php
-				if(is_single())
-				{
-			?>
-			<div class="post_share_wrapper">
-				<a id="page_share" href="javascript:;"><i class="fa fa-share-alt"></i></a>
-			</div>
-			<?php
-				}
-			?>
-
-    	</div>
-    	<!-- End right corner buttons -->
         </div>
     	</div>
     </div>
