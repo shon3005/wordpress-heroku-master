@@ -138,16 +138,16 @@ elseif(is_home())
                             <!-- <li *ngIf="!userService.authenticated"><a class="bordered  sign-up-button" routerLink="/sign-up" routerLinkActive="active">Sign Up</a></li> -->
                         </ul>
 
-                        <ul class="nav navbar-nav navbar-right mobile">
-                            <li><a href="http://www.appwinit.com/">Home</a></li>
-                            <li><a href="http://www.appwinit.com/how-it-works">How it works</a></li>
-                            <li><a href="http://www.appwinit.com/business">Business</a></li>
-                            <li><a href="http://www.appwinit.com/faq/parking-tickets">FAQ</a></li>
-                            <li><a href="http://www.appwinit.com/contact">Contact</a></li>
-                            <li><a href="http://blog.appwinit.com">Blog</a></li>
+                        <!-- <ul class="nav navbar-nav navbar-right mobile"> -->
+                            <!-- <li><a href="http://www.appwinit.com/">Home</a></li> -->
+                            <!-- <li><a href="http://www.appwinit.com/how-it-works">How it works</a></li> -->
+                            <!-- <li><a href="http://www.appwinit.com/business">Business</a></li> -->
+                            <!-- <li><a href="http://www.appwinit.com/faq/parking-tickets">FAQ</a></li> -->
+                            <!-- <li><a href="http://www.appwinit.com/contact">Contact</a></li> -->
+                            <!-- <li><a href="http://blog.appwinit.com">Blog</a></li> -->
                             <!-- <li *ngIf="!userService.authenticated"><a routerLink="/log-in" routerLinkActive="active">Log in</a></li> -->
                             <!-- <li *ngIf="!userService.authenticated"><a class="bordered  sign-up-button" routerLink="/sign-up" routerLinkActive="active">Sign Up</a></li> -->
-                        </ul>
+                        <!-- </ul> -->
                     </div>
                 </div>
             </nav>
