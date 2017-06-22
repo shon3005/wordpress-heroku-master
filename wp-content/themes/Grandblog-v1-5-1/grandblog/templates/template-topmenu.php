@@ -98,7 +98,7 @@ elseif(is_home())
 ?>
 <div class="top_bar">
 
-		<div id="menu_wrapper">
+		<!-- <div id="menu_wrapper"> -->
 		<?php
     		//Get Soical Icon
 			get_template_part("/templates/template-socials");
@@ -154,7 +154,7 @@ elseif(is_home())
         <?php
         	}
         ?>
-        </div>
+        <!-- </div> -->
     	</div>
     </div>
 

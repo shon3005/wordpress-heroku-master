@@ -5459,3 +5459,69 @@ ul.flickr li
 	display: block;
 	text-align: center;
 }
+
+.navbar-brand {
+  padding-top: 25px;
+  padding-bottom: 25px; }
+@media screen and (max-width: 576px) {
+  .navbar-nav.desktop {
+    display: none; } }
+@media screen and (min-width: 577px) {
+  .navbar-nav.mobile {
+    display: none; } }
+.navbar {
+  border-bottom: solid 1px #e2e5e7;
+  margin-bottom: 0 !important; }
+  @media (min-width: 768px) {
+    .navbar {
+      min-height: 74px; } }
+  @media screen and (max-width: 576px) {
+    .navbar .navbar-collapse {
+      border-bottom: solid 1px #e2e5e7; } }
+  .navbar ul li {
+    background-color: white;
+    text-transform: uppercase;
+    font-size: 12px; }
+    @media screen and (max-width: 576px) {
+      .navbar ul li {
+        border-bottom: solid 1px #e2e5e7; } }
+    .navbar ul li a, .navbar ul li a:link, .navbar ul li a:visited, .navbar ul li a:hover {
+      background-color: transparent;
+      color: #414141;
+      text-decoration: none;
+      height: 73px;
+      padding-left: 20px;
+      padding-right: 20px; }
+      .navbar ul li a:not(.bordered), .navbar ul li a:link:not(.bordered), .navbar ul li a:visited:not(.bordered), .navbar ul li a:hover:not(.bordered) {
+        border-bottom: solid 2px white;
+        padding-top: 26px; }
+      .navbar ul li a.active:not(.bordered), .navbar ul li a:link.active:not(.bordered), .navbar ul li a:visited.active:not(.bordered), .navbar ul li a:hover.active:not(.bordered) {
+        color: #3089f3;
+        border-bottom: solid 2px #3089f3; }
+      .navbar ul li a.bordered, .navbar ul li a:link.bordered, .navbar ul li a:visited.bordered, .navbar ul li a:hover.bordered {
+        border: solid 1px #3089f3;
+        border-radius: 12.5px;
+        color: #3089f3;
+        height: 25px;
+        line-height: 25px; }
+      .navbar ul li a.sign-up-button, .navbar ul li a:link.sign-up-button, .navbar ul li a:visited.sign-up-button, .navbar ul li a:hover.sign-up-button {
+        background-image: linear-gradient(106deg, #5dbefb, #3089f3);
+        border: none;
+        border-radius: 12.5px;
+        color: white;
+        height: 25px;
+        line-height: 25px;
+        margin-top: 24px;
+        padding-bottom: 0;
+        padding-top: 0;
+        margin-left: 20px; }
+
+.max-width-900 {
+  max-width: 900px; }
+
+@font-face {
+  font-family: Gotham Light;
+  src: url("./fonts/Gotham-Light/Gotham-Light.otf") format("opentype"); }
+* {
+  box-sizing: border-box;
+  font-family: Gotham Light; }
