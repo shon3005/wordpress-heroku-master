@@ -10,12 +10,12 @@
 	//Check if blank template
 	global $grandblog_is_no_header;
 	global $grandblog_screen_class;
-
+	
 	if(!is_bool($grandblog_is_no_header) OR !$grandblog_is_no_header)
 	{
 
 	global $grandblog_homepage_style;
-
+	
 	//If display photostream
 	$pp_photostream = get_option('pp_photostream');
 	if(THEMEDEMO && isset($_GET['footer']) && !empty($_GET['footer']))
@@ -26,7 +26,7 @@
 	if(!empty($pp_photostream))
 	{
 		$photos_arr = array();
-
+	
 		if($pp_photostream == 'flickr')
 		{
 			$pp_flickr_id = get_option('pp_flickr_id');
@@ -38,7 +38,7 @@
 			$pp_instagram_access_token = get_option('pp_instagram_access_token');
 			$photos_arr = grandblog_get_instagram($pp_instagram_username, $pp_instagram_access_token, 27);
 		}
-
+		
 		wp_enqueue_script("grandblog-modernizr", get_template_directory_uri()."/js/modernizr.js", false, THEMEVERSION, true);
 		wp_enqueue_script("grandblog-jquery-gridrotator", get_template_directory_uri()."/js/jquery.gridrotator.js", false, THEMEVERSION, true);
 		wp_enqueue_script("grandblog-script-footer-gridrotator", get_template_directory_uri()."/templates/script-gridrotator.php?grid=footer_photostream&amp;rows=2", false, THEMEVERSION, true);
@@ -90,7 +90,7 @@
 	    if(!empty($tg_footer_sidebar))
 	    {
 	    	$footer_class = '';
-
+	    	
 	    	switch($tg_footer_sidebar)
 	    	{
 	    		case 1:
@@ -109,7 +109,7 @@
 	    			$footer_class = 'four';
 	    		break;
 	    	}
-
+	    	
 	    	global $grandblog_homepage_style;
 	?>
 	<div id="footer" class="<?php if(isset($grandblog_homepage_style) && !empty($grandblog_homepage_style)) { echo esc_attr($grandblog_homepage_style); } ?>">
@@ -126,11 +126,11 @@
 		<?php
 			//Check if display social icons or footer menu
 			$tg_footer_copyright_right_area = kirki_get_option('tg_footer_copyright_right_area');
-
+			
 			if($tg_footer_copyright_right_area=='social')
 			{
 				if($grandblog_homepage_style!='flow' && $grandblog_homepage_style!='fullscreen' && $grandblog_homepage_style!='carousel' && $grandblog_homepage_style!='flip' && $grandblog_homepage_style!='fullscreen_video')
-				{
+				{	
 					//Check if open link in new window
 					$tg_footer_social_link = kirki_get_option('tg_footer_social_link');
 			?>
@@ -138,7 +138,7 @@
 			    <ul>
 			    	<?php
 			    		$pp_facebook_url = get_option('pp_facebook_url');
-
+			    		
 			    		if(!empty($pp_facebook_url))
 			    		{
 			    	?>
@@ -148,7 +148,7 @@
 			    	?>
 			    	<?php
 			    		$pp_twitter_username = get_option('pp_twitter_username');
-
+			    		
 			    		if(!empty($pp_twitter_username))
 			    		{
 			    	?>
@@ -158,7 +158,7 @@
 			    	?>
 			    	<?php
 			    		$pp_flickr_username = get_option('pp_flickr_username');
-
+			    		
 			    		if(!empty($pp_flickr_username))
 			    		{
 			    	?>
@@ -168,7 +168,7 @@
 			    	?>
 			    	<?php
 			    		$pp_youtube_url = get_option('pp_youtube_url');
-
+			    		
 			    		if(!empty($pp_youtube_url))
 			    		{
 			    	?>
@@ -178,7 +178,7 @@
 			    	?>
 			    	<?php
 			    		$pp_vimeo_username = get_option('pp_vimeo_username');
-
+			    		
 			    		if(!empty($pp_vimeo_username))
 			    		{
 			    	?>
@@ -188,7 +188,7 @@
 			    	?>
 			    	<?php
 			    		$pp_tumblr_username = get_option('pp_tumblr_username');
-
+			    		
 			    		if(!empty($pp_tumblr_username))
 			    		{
 			    	?>
@@ -198,7 +198,7 @@
 			    	?>
 			    	<?php
 			    		$pp_google_url = get_option('pp_google_url');
-
+			    		
 			    		if(!empty($pp_google_url))
 			    		{
 			    	?>
@@ -208,7 +208,7 @@
 			    	?>
 			    	<?php
 			    		$pp_dribbble_username = get_option('pp_dribbble_username');
-
+			    		
 			    		if(!empty($pp_dribbble_username))
 			    		{
 			    	?>
@@ -218,7 +218,7 @@
 			    	?>
 			    	<?php
 			    		$pp_linkedin_url = get_option('pp_linkedin_url');
-
+			    		
 			    		if(!empty($pp_linkedin_url))
 			    		{
 			    	?>
@@ -228,7 +228,7 @@
 			    	?>
 			    	<?php
 			            $pp_pinterest_username = get_option('pp_pinterest_username');
-
+			            
 			            if(!empty($pp_pinterest_username))
 			            {
 			        ?>
@@ -238,7 +238,7 @@
 			        ?>
 			        <?php
 			        	$pp_instagram_username = get_option('pp_instagram_username');
-
+			        	
 			        	if(!empty($pp_instagram_username))
 			        	{
 			        ?>
@@ -248,7 +248,7 @@
 			        ?>
 			        <?php
 					    $pp_behance_username = get_option('pp_behance_username');
-
+					    
 					    if(!empty($pp_behance_username))
 					    {
 					?>
@@ -263,15 +263,15 @@
 			} //End if display social icons
 			else
 			{
-				if ( has_nav_menu( 'footer-menu' ) )
+				if ( has_nav_menu( 'footer-menu' ) ) 
 			    {
-				    wp_nav_menu(
-				        	array(
+				    wp_nav_menu( 
+				        	array( 
 				        		'menu_id'			=> 'footer_menu',
 				        		'menu_class'		=> 'footer_nav',
 				        		'theme_location' 	=> 'footer-menu',
-				        	)
-				    );
+				        	) 
+				    ); 
 				}
 			}
 		?>
@@ -284,11 +284,11 @@
 	        	echo '<div id="copyright">'.wp_kses_post(htmlspecialchars_decode($tg_footer_copyright_text)).'</div>';
 	        }
 	    ?>
-
+	    
 	    <?php
 	    	//Check if display to top button
 	    	$tg_footer_copyright_totop = kirki_get_option('tg_footer_copyright_totop');
-
+	    	
 	    	if(!empty($tg_footer_copyright_totop))
 	    	{
 	    ?>
@@ -296,14 +296,14 @@
 	    <?php
 	    	}
 	    ?>
-
+	    
 	    <?php
 	    	$tg_boxed = kirki_get_option('tg_boxed');
 		    if(THEMEDEMO && isset($_GET['boxed']) && !empty($_GET['boxed']))
 		    {
 		    	$tg_boxed = 1;
 		    }
-
+		    
 		    //If enable boxed layout
 		    if(!empty($tg_boxed))
 		    {
@@ -359,9 +359,9 @@
         		    	<div class="demo_thumb_desc">
     	    	    		<h6>Classic</h6>
     	    	    		<a href="<?php echo site_url(); ?>" target="_blank" class="button white">Launch</a>
-        		    	</div>
-        		    </div>
-        		</div>
+        		    	</div> 
+        		    </div>	   
+        		</div>		   
     		</li>
     		<li>
         		<img src="<?php echo get_stylesheet_directory_uri(); ?>/cache/demos/screen2.jpg" alt=""/>
@@ -370,9 +370,9 @@
         		    	<div class="demo_thumb_desc">
     	    	    		<h6>3 Columns Slider</h6>
     	    	    		<a href="<?php echo site_url('/?layout=fullwidth'); ?>" target="_blank" class="button white">Launch</a>
-        		    	</div>
-        		    </div>
-        		</div>
+        		    	</div> 
+        		    </div>	   
+        		</div>		   
     		</li>
     		<li>
         		<img src="<?php echo get_stylesheet_directory_uri(); ?>/cache/demos/screen3.jpg" alt=""/>
@@ -381,9 +381,9 @@
         		    	<div class="demo_thumb_desc">
     	    	    		<h6>Grid With Frame</h6>
     	    	    		<a href="<?php echo site_url('/?layout=3cols&frame=1'); ?>" target="_blank" class="button white">Launch</a>
-        		    	</div>
-        		    </div>
-        		</div>
+        		    	</div> 
+        		    </div>	   
+        		</div>		   
     		</li>
     		<li>
         		<img src="<?php echo get_stylesheet_directory_uri(); ?>/cache/demos/screen4.jpg" alt=""/>
@@ -392,9 +392,9 @@
         		    	<div class="demo_thumb_desc">
     	    	    		<h6>Boxed Layout</h6>
     	    	    		<a href="<?php echo site_url('/?layout=fullwidth&frame=noframe&boxed=1'); ?>" target="_blank" class="button white">Launch</a>
-        		    	</div>
-        		    </div>
-        		</div>
+        		    	</div> 
+        		    </div>	   
+        		</div>		   
     		</li>
     		<li>
         		<img src="<?php echo get_stylesheet_directory_uri(); ?>/cache/demos/screen5.jpg" alt=""/>
@@ -403,9 +403,9 @@
         		    	<div class="demo_thumb_desc">
     	    	    		<h6>Classic With Top Menu</h6>
     	    	    		<a href="<?php echo site_url('/?topbar=1'); ?>" target="_blank" class="button white">Launch</a>
-        		    	</div>
-        		    </div>
-        		</div>
+        		    	</div> 
+        		    </div>	   
+        		</div>		   
     		</li>
     		<li>
         		<img src="<?php echo get_stylesheet_directory_uri(); ?>/cache/demos/screen6.jpg" alt=""/>
@@ -414,9 +414,9 @@
         		    	<div class="demo_thumb_desc">
     	    	    		<h6>Simple Menu</h6>
     	    	    		<a href="<?php echo site_url('/?menu=1'); ?>" target="_blank" class="button white">Launch</a>
-        		    	</div>
-        		    </div>
-        		</div>
+        		    	</div> 
+        		    </div>	   
+        		</div>		   
     		</li>
     	</ul>
     	</div>
@@ -448,7 +448,7 @@
 </style>
 <?php
     }
-
+    
     if(!empty($tg_frame))
     {
     	wp_enqueue_style("grandblog-frame-css", get_template_directory_uri()."/css/frame.css", false, THEMEVERSION, "all");
@@ -477,12 +477,5 @@
 
 	wp_footer();
 ?>
-
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
 </body>
 </html>
