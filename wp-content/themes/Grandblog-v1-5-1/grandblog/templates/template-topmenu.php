@@ -152,8 +152,6 @@ elseif(is_home())
                             <li><a href="http://www.appwinit.com/faq/parking-tickets">FAQ</a></li>
                             <li><a href="http://www.appwinit.com/contact">Contact</a></li>
                             <li><a href="http://blog.appwinit.com">Blog</a></li>
-                            <!-- <li *ngIf="!userService.authenticated"><a routerLink="/log-in" routerLinkActive="active">Log in</a></li> -->
-                            <!-- <li *ngIf="!userService.authenticated"><a class="bordered  sign-up-button" routerLink="/sign-up" routerLinkActive="active">Sign Up</a></li> -->
                         </ul>
                         ?>
                     </div>
