@@ -134,26 +134,28 @@ elseif(is_home())
                             <!-- <li *ngIf="!userService.authenticated"><a routerLink="/log-in" routerLinkActive="active">Log in</a></li> -->
                             <!-- <li *ngIf="!userService.authenticated"><a class="bordered  sign-up-button" routerLink="/sign-up" routerLinkActive="active">Sign Up</a></li> -->
                         </ul>
-
                         <?php
-                        wp_nav_menu( array(
-                            'theme_location' => 'top_menu',
-                            'depth' => 2,
-                            'container' => false,
-                            'menu_class' => 'nav navbar-nav',
-                            'fallback_cb' => 'wp_page_menu',
-                            //Process nav menu using our custom nav walker
-                            'walker' => new wp_bootstrap_navwalker())
-                        );
-                        <ul>
-                            <li><a href="http://www.appwinit.com/">Home</a></li>
-                            <li><a href="http://www.appwinit.com/how-it-works">How it works</a></li>
-                            <li><a href="http://www.appwinit.com/business">Business</a></li>
-                            <li><a href="http://www.appwinit.com/faq/parking-tickets">FAQ</a></li>
-                            <li><a href="http://www.appwinit.com/contact">Contact</a></li>
-                            <li><a href="http://blog.appwinit.com">Blog</a></li>
-                        </ul>
+                            wp_nav_menu( array(
+                                'theme_location' => 'top_menu',
+                                'depth' => 2,
+                                'container' => false,
+                                'menu_class' => 'nav navbar-nav',
+                                'fallback_cb' => 'wp_page_menu',
+                                //Process nav menu using our custom nav walker
+                                'walker' => new wp_bootstrap_navwalker())
+                            );
                         ?>
+
+                        <!-- <ul class="nav navbar-nav navbar-right mobile"> -->
+                            <!-- <li><a href="http://www.appwinit.com/">Home</a></li> -->
+                            <!-- <li><a href="http://www.appwinit.com/how-it-works">How it works</a></li> -->
+                            <!-- <li><a href="http://www.appwinit.com/business">Business</a></li> -->
+                            <!-- <li><a href="http://www.appwinit.com/faq/parking-tickets">FAQ</a></li> -->
+                            <!-- <li><a href="http://www.appwinit.com/contact">Contact</a></li> -->
+                            <!-- <li><a href="http://blog.appwinit.com">Blog</a></li> -->
+                            <!-- <li *ngIf="!userService.authenticated"><a routerLink="/log-in" routerLinkActive="active">Log in</a></li> -->
+                            <!-- <li *ngIf="!userService.authenticated"><a class="bordered  sign-up-button" routerLink="/sign-up" routerLinkActive="active">Sign Up</a></li> -->
+                        <!-- </ul> -->
                     </div>
                 </div>
             </nav>
