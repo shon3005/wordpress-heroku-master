@@ -33,49 +33,7 @@ elseif(is_home())
 ?>
 
 <!-- Begin top bar -->
-<!-- <div class="above_top_bar"> -->
-    <!-- <div class="page_content_wrapper"> -->
 
-    <!-- <div class="top_contact_info"> -->
-		<?php
-		    $tg_menu_contact_hours = kirki_get_option('tg_menu_contact_hours');
-
-		    if(!empty($tg_menu_contact_hours))
-		    {
-		?>
-		    <span id="top_contact_hours"><i class="fa fa-clock-o"></i><?php echo esc_html($tg_menu_contact_hours); ?></span>
-		<?php
-		    }
-		?>
-		<?php
-		    //Display top contact info
-		    $tg_menu_contact_number = kirki_get_option('tg_menu_contact_number');
-
-		    if(!empty($tg_menu_contact_number))
-		    {
-		?>
-		    <span id="top_contact_number"><a href="tel:<?php echo esc_attr($tg_menu_contact_number); ?>"><i class="fa fa-phone"></i><?php echo esc_html($tg_menu_contact_number); ?></a></span>
-		<?php
-		    }
-		?>
-    <!-- </div> -->
-
-    <?php
-    	//Display Top Menu
-    	if ( has_nav_menu( 'top-menu' ) )
-		{
-		    wp_nav_menu(
-		        	array(
-		        		'menu_id'			=> 'top_menu',
-		        		'menu_class'		=> 'top_nav',
-		        		'theme_location' 	=> 'top-menu',
-		        	)
-		    );
-		}
-    ?>
-    <!-- <br class="clear"/> -->
-    <!-- </div> -->
-<!-- </div> -->
 <?php
     }
 ?>
