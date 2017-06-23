@@ -33,7 +33,49 @@ elseif(is_home())
 ?>
 
 <!-- Begin top bar -->
+<div class="above_top_bar">
+    <div class="page_content_wrapper">
 
+    <div class="top_contact_info">
+		<?php
+		    $tg_menu_contact_hours = kirki_get_option('tg_menu_contact_hours');
+
+		    if(!empty($tg_menu_contact_hours))
+		    {
+		?>
+		    <span id="top_contact_hours"><i class="fa fa-clock-o"></i><?php echo esc_html($tg_menu_contact_hours); ?></span>
+		<?php
+		    }
+		?>
+		<?php
+		    //Display top contact info
+		    $tg_menu_contact_number = kirki_get_option('tg_menu_contact_number');
+
+		    if(!empty($tg_menu_contact_number))
+		    {
+		?>
+		    <span id="top_contact_number"><a href="tel:<?php echo esc_attr($tg_menu_contact_number); ?>"><i class="fa fa-phone"></i><?php echo esc_html($tg_menu_contact_number); ?></a></span>
+		<?php
+		    }
+		?>
+    </div>
+
+    <?php
+    	//Display Top Menu
+    	if ( has_nav_menu( 'top-menu' ) )
+		{
+		    wp_nav_menu(
+		        	array(
+		        		'menu_id'			=> 'top_menu',
+		        		'menu_class'		=> 'top_nav',
+		        		'theme_location' 	=> 'top-menu',
+		        	)
+		    );
+		}
+    ?>
+    <br class="clear"/>
+    </div>
+<!-- </div> -->
 <?php
     }
 ?>
@@ -57,7 +99,42 @@ elseif(is_home())
 <!-- <div class="top_bar"> -->
 
 		<!-- <div id="menu_wrapper"> -->
+        <nav class="navbar navbar-fixed-top" style="background-color: white;">
+            <div class="container max-width-900 wi-navbar" style="height: 73px;">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" #toggler>
+                        <span>
+                            <img src="http://cdn.appwinit.com/small-menu/image.png" alt="menu" srcset="http://cdn.appwinit.com/small-menu/image@2x.png 2x, http://cdn.appwinit.com/small-menu/image@3x.png 3x" style="height: 19px; width: 25px;margin-top: 3px;"/>
+                        </span>
+                    </button>
+                    <a class="navbar-brand" href="http://www.appwinit.com/"><img src="http://cdn.appwinit.com/logo/image.png" alt="Logo" srcset="http://cdn.appwinit.com/logo/image@2x.png 2x, http://cdn.appwinit.com/logo/image@3x.png 3x" style="height: 22px; width: 77px;"/></a>
+                </div>
 
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right desktop">
+                        <li><a href="http://www.appwinit.com/">Home</a></li>
+                        <li><a href="http://www.appwinit.com/how-it-works">How it works</a></li>
+                        <li><a href="http://www.appwinit.com/business">Business</a></li>
+                        <li><a href="http://www.appwinit.com/faq/parking-tickets">FAQ</a></li>
+                        <li><a href="http://www.appwinit.com/contact">Contact</a></li>
+                        <li><a href="http://blog.appwinit.com">Blog</a></li>
+                        <!-- <li *ngIf="!userService.authenticated"><a routerLink="/log-in" routerLinkActive="active">Log in</a></li> -->
+                        <!-- <li *ngIf="!userService.authenticated"><a class="bordered  sign-up-button" routerLink="/sign-up" routerLinkActive="active">Sign Up</a></li> -->
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right mobile">
+                        <li><a href="http://www.appwinit.com/">Home</a></li>
+                        <li><a href="http://www.appwinit.com/how-it-works">How it works</a></li>
+                        <li><a href="http://www.appwinit.com/business">Business</a></li>
+                        <li><a href="http://www.appwinit.com/faq/parking-tickets">FAQ</a></li>
+                        <li><a href="http://www.appwinit.com/contact">Contact</a></li>
+                        <li><a href="http://blog.appwinit.com">Blog</a></li>
+                        <!-- <li *ngIf="!userService.authenticated"><a routerLink="/log-in" routerLinkActive="active">Log in</a></li> -->
+                        <!-- <li *ngIf="!userService.authenticated"><a class="bordered  sign-up-button" routerLink="/sign-up" routerLinkActive="active">Sign Up</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
 		<?php
 			//Check if enable main menu
@@ -70,42 +147,7 @@ elseif(is_home())
 			if(!empty($tg_main_menu))
 			{
 		?>
-            <nav class="navbar navbar-fixed-top" style="background-color: white;">
-                <div class="container max-width-900 wi-navbar" style="height: 73px;">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" #toggler>
-                            <span>
-                                <img src="http://cdn.appwinit.com/small-menu/image.png" alt="menu" srcset="http://cdn.appwinit.com/small-menu/image@2x.png 2x, http://cdn.appwinit.com/small-menu/image@3x.png 3x" style="height: 19px; width: 25px;margin-top: 3px;"/>
-                            </span>
-                        </button>
-                        <a class="navbar-brand" href="http://www.appwinit.com/"><img src="http://cdn.appwinit.com/logo/image.png" alt="Logo" srcset="http://cdn.appwinit.com/logo/image@2x.png 2x, http://cdn.appwinit.com/logo/image@3x.png 3x" style="height: 22px; width: 77px;"/></a>
-                    </div>
 
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav navbar-right desktop">
-                            <li><a href="http://www.appwinit.com/">Home</a></li>
-                            <li><a href="http://www.appwinit.com/how-it-works">How it works</a></li>
-                            <li><a href="http://www.appwinit.com/business">Business</a></li>
-                            <li><a href="http://www.appwinit.com/faq/parking-tickets">FAQ</a></li>
-                            <li><a href="http://www.appwinit.com/contact">Contact</a></li>
-                            <li><a href="http://blog.appwinit.com">Blog</a></li>
-                            <!-- <li *ngIf="!userService.authenticated"><a routerLink="/log-in" routerLinkActive="active">Log in</a></li> -->
-                            <!-- <li *ngIf="!userService.authenticated"><a class="bordered  sign-up-button" routerLink="/sign-up" routerLinkActive="active">Sign Up</a></li> -->
-                        </ul>
-
-                        <ul class="nav navbar-nav navbar-right mobile">
-                            <li><a href="http://www.appwinit.com/">Home</a></li>
-                            <li><a href="http://www.appwinit.com/how-it-works">How it works</a></li>
-                            <li><a href="http://www.appwinit.com/business">Business</a></li>
-                            <li><a href="http://www.appwinit.com/faq/parking-tickets">FAQ</a></li>
-                            <li><a href="http://www.appwinit.com/contact">Contact</a></li>
-                            <li><a href="http://blog.appwinit.com">Blog</a></li>
-                            <!-- <li *ngIf="!userService.authenticated"><a routerLink="/log-in" routerLinkActive="active">Log in</a></li> -->
-                            <!-- <li *ngIf="!userService.authenticated"><a class="bordered  sign-up-button" routerLink="/sign-up" routerLinkActive="active">Sign Up</a></li> -->
-                        </ul>
-                    </div>
-                </div>
-            </nav>
         <?php
         	}
         ?>
