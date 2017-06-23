@@ -103,7 +103,7 @@ global $grandblog_homepage_style;
 	<input type="hidden" id="pp_footer_style" name="pp_footer_style" value="<?php echo esc_attr($tg_footer_sidebar); ?>"/>
 
 	<!-- Begin mobile menu -->
-	<a id="close_mobile_menu" href="javascript:;"></a>
+	<!-- <a id="close_mobile_menu" href="javascript:;"></a> -->
 	<div class="mobile_menu_wrapper">
 		<?php
     	    //Check if display search in header
