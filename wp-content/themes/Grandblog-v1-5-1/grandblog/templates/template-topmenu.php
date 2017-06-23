@@ -16,7 +16,7 @@ elseif(is_home())
 }
 ?>
 
-<!-- <div class="header_style_wrapper"> -->
+<div class="header_style_wrapper">
 <?php
     //Check if display top bar
     $tg_topbar = kirki_get_option('tg_topbar');
@@ -33,10 +33,10 @@ elseif(is_home())
 ?>
 
 <!-- Begin top bar -->
-<div class="above_top_bar">
-    <div class="page_content_wrapper">
+<!-- <div class="above_top_bar"> -->
+    <!-- <div class="page_content_wrapper"> -->
 
-    <div class="top_contact_info">
+    <!-- <div class="top_contact_info"> -->
 		<?php
 		    $tg_menu_contact_hours = kirki_get_option('tg_menu_contact_hours');
 
@@ -58,7 +58,7 @@ elseif(is_home())
 		<?php
 		    }
 		?>
-    </div>
+    <!-- </div> -->
 
     <?php
     	//Display Top Menu
@@ -73,9 +73,9 @@ elseif(is_home())
 		    );
 		}
     ?>
-    <br class="clear"/>
-    </div>
-</div>
+    <!-- <br class="clear"/> -->
+    <!-- </div> -->
+<!-- </div> -->
 <?php
     }
 ?>
@@ -153,4 +153,4 @@ elseif(is_home())
         ?>
         <!-- </div> -->
     	<!-- </div> -->
-    <!-- </div> -->
+    </div>
