@@ -96,16 +96,21 @@ elseif(is_home())
     	$pp_page_bg = '';
     }
 ?>
-<div class="top_bar">
+<!-- <div class="top_bar"> -->
 
 		<!-- <div id="menu_wrapper"> -->
-		<?php
-    		//Get Soical Icon
-			get_template_part("/templates/template-socials");
-    	?>
+
 
 		<?php
+			//Check if enable main menu
+			$tg_main_menu = kirki_get_option('tg_main_menu');
+			if(THEMEDEMO && isset($_GET['menu']) && !empty($_GET['menu']))
+			{
+			    $tg_main_menu = false;
+			}
 
+			if(!empty($tg_main_menu))
+			{
 		?>
             <nav class="navbar navbar-fixed-top" style="background-color: white;">
                 <div class="container max-width-900 wi-navbar" style="height: 73px;">
@@ -147,7 +152,7 @@ elseif(is_home())
         	}
         ?>
         <!-- </div> -->
-    	</div>
+    	<!-- </div> -->
     </div>
 
     <!-- Begin logo -->
