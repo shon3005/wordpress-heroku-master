@@ -313,8 +313,6 @@ function grandblog_add_admin() {
 		    	    get_template_directory().'/css/wordpress.css',
 		    	    get_template_directory().'/css/animation.css',
 		    	    get_template_directory().'/css/magnific-popup.css',
-		    	    get_template_directory().'/css/jqueryui/custom.css',
-		    	    get_template_directory().'/js/flexslider/flexslider.css',
 		    	    get_template_directory().'/css/tooltipster.css',
 		    	    get_template_directory().'/css/screen.css',
 		    	);
