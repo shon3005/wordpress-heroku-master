@@ -104,65 +104,7 @@ global $grandblog_homepage_style;
 
 	<!-- Begin mobile menu -->
 	<!-- <a id="close_mobile_menu" href="javascript:;"></a> -->
-	<div class="mobile_menu_wrapper">
-		<?php
-    	    //Check if display search in header
-    	    $tg_menu_search = kirki_get_option('tg_menu_search');
 
-    	    if(!empty($tg_menu_search))
-    	    {
-    	?>
-    	<form role="search" method="get" name="searchform" id="searchform" action="<?php echo esc_url(home_url('/')); ?>/">
-    	    <div>
-    	    	<input type="text" value="<?php the_search_query(); ?>" name="s" id="s" autocomplete="off" placeholder="<?php esc_html_e( 'Search...', 'grandblog-translation' ); ?>"/>
-    	    	<button>
-    	        	<i class="fa fa-search"></i>
-    	        </button>
-    	    </div>
-    	    <div id="autocomplete"></div>
-    	</form>
-    	<?php
-    	    }
-    	?>
-
-	    <?php
-	    	//Check if has custom menu
-			if(is_object($post) && $post->post_type == 'page')
-			{
-			    $page_menu = get_post_meta($post->ID, 'page_menu', true);
-			}
-
-			if ( has_nav_menu( 'side-menu' ) )
-			{
-			    //Get page nav
-			    wp_nav_menu(
-			        array(
-			            'menu_id'			=> 'mobile_main_menu',
-		                'menu_class'		=> 'mobile_main_nav',
-			            'theme_location' 	=> 'side-menu',
-			        )
-			    );
-			}
-		?>
-
-		<!-- Begin side menu sidebar -->
-		<div class="page_content_wrapper">
-			<div class="sidebar_wrapper">
-		        <div class="sidebar">
-
-		        	<div class="content">
-
-		        		<ul class="sidebar_widget">
-		        		<?php dynamic_sidebar('Side Menu Sidebar'); ?>
-		        		</ul>
-
-		        	</div>
-
-		        </div>
-			</div>
-		</div>
-		<!-- End side menu sidebar -->
-	</div>
 	<!-- End mobile menu -->
 
 	<!-- Begin template wrapper -->
