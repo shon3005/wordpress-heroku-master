@@ -96,7 +96,7 @@ elseif(is_home())
     	$pp_page_bg = '';
     }
 ?>
-<div class="top_bar">
+<!-- <div class="top_bar"> -->
 
 		<!-- <div id="menu_wrapper"> -->
 		<?php
@@ -155,7 +155,7 @@ elseif(is_home())
         	}
         ?>
         <!-- </div> -->
-    	</div>
+    	<!-- </div> -->
     </div>
 
     <!-- Begin logo -->
