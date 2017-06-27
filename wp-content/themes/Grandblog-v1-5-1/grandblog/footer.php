@@ -315,7 +315,7 @@
 	</div>
 </div>
 
-<!-- </div> -->
+</div>
 
 <?php
     } //End if not blank template

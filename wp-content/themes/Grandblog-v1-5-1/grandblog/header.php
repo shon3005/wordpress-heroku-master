@@ -65,7 +65,12 @@ global $grandblog_homepage_style;
 		//Check if sticky menu
 		$tg_fixed_menu = kirki_get_option('tg_fixed_menu');
 
-
+		//Check if display top bar
+		$tg_topbar = kirki_get_option('tg_topbar');
+		if(THEMEDEMO && isset($_GET['topbar']) && !empty($_GET['topbar']))
+		{
+			$tg_topbar = true;
+		}
 
 		//Check if add blur effect
 		$tg_page_title_img_blur = kirki_get_option('tg_page_title_img_blur');
@@ -103,7 +108,7 @@ global $grandblog_homepage_style;
 	<!-- End mobile menu -->
 
 	<!-- Begin template wrapper -->
-	<!-- <div id="wrapper"> -->
+	<div id="wrapper">
 
 	<?php
 	    //Get main menu layout
