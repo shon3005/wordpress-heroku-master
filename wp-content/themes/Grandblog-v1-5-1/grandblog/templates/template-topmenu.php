@@ -96,10 +96,13 @@ elseif(is_home())
     	$pp_page_bg = '';
     }
 ?>
-<!-- <div class="top_bar"> -->
+<div class="top_bar">
 
-		<!-- <div id="menu_wrapper"> -->
-
+		<div id="menu_wrapper">
+        <?php
+    		//Get Soical Icon
+			get_template_part("/templates/template-socials");
+    	?>
 
 		<?php
 			//Check if enable main menu
@@ -151,8 +154,8 @@ elseif(is_home())
         <?php
         	}
         ?>
-        <!-- </div> -->
-    	<!-- </div> -->
+        </div>
+    	</div>
     </div>
 
     <!-- Begin logo -->
