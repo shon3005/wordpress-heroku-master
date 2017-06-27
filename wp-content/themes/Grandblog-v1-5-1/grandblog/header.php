@@ -108,7 +108,7 @@ global $grandblog_homepage_style;
 	<!-- End mobile menu -->
 
 	<!-- Begin template wrapper -->
-	<div id="wrapper">
+	<!-- <div id="wrapper"> -->
 
 	<?php
 	    //Get main menu layout
